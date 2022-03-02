@@ -1,0 +1,444 @@
+/*+++++++++++++++++++++++ media query +++++++++++++++++++++++*/
+/* aboutus.html */
+
+
+
+
+
+
+
+
+/* ===========mobile(start)============== */
+@media screen and (max-width: 767px) {
+
+	section div.inner_wrap { margin: 0;}
+
+
+/*++++ section.visual ++++*/
+	section.visual { overflow: hidden; position: relative; width: 100%; height: 24.4084507vh; min-height: 150px; margin-top: 50px; }
+	section.visual img { display: block; width: 100%; object-fit: cover; }
+	section.visual div.txt_wrap { position: absolute; top: 50%; width: 100%; transform: translateY(-50%); }
+	section.visual div.txt_wrap > span { display: inline-block; position: relative; width: 50%; color: #fff; }
+	section.visual div.txt_wrap > span.pre_title { font-size: 0.75em; }
+	section.visual div.txt_wrap > span.pre_title > span { display: block; position: absolute; right: 1em; bottom: 0; }
+
+	section.visual div.txt_wrap > span.pre_title > span:nth-of-type(1) { animation-name: span_01; animation-duration: 7s; animation-iteration-count: infinite; }
+	section.visual div.txt_wrap > span.pre_title > span:nth-of-type(2) { animation-name: span_02; animation-duration: 7s; animation-iteration-count: infinite; }
+	section.visual div.txt_wrap > span.title { font-size: 1.75em; }
+
+	@keyframes span_01 {
+		0% {
+			opacity: 0;
+			transform: translateY(100%);
+		}
+		10% {
+			opacity: 1;
+			transform: translateY(0);
+		}
+		50% {
+			opacity: 1;
+			transform: translateY(0);
+		}
+		51% {
+			opacity: 0;
+			transform: translateY(100%);
+		}
+		100% {
+			opacity: 0;
+			transform: translateY(100%);
+		}
+	}
+
+	@keyframes span_02 {
+		0% {
+			opacity: 0;
+			transform: translateY(100%);
+		}
+		10% {
+			opacity: 0;
+			transform: translateY(100%);
+		}
+		50% {
+			opacity: 0;
+			transform: translateY(100%);
+		}
+		60% {
+			opacity: 1;
+			transform: translateY(0%);
+		}
+		100% {
+			opacity: 1;
+			transform: translateY(0%);
+		}
+	}
+
+
+
+/*++++ section.logo ++++*/
+	
+	section.logo h2 { margin: 0 6.25vw 30px; }
+	section.logo { overflow: hidden; margin-top: 50px; }
+	section.logo img { display: block; width: 56.25vw; max-width: 250px; margin: 0 auto 10px; }
+	section.logo p { width: 80%;  margin: 0 auto; font-size: 0.875em; line-height: 1.5; text-align: center; }
+	section.logo p > span { color: #085a8c; font-size: 1.25em; font-weight: bold; }
+
+
+/*++++ section.company ++++*/
+
+	section.company { overflow: hidden; margin: 50px 6.25vw 0; }
+	section.company img { display: block; width: 100%; }
+	section.company div.info { width: 87.5vw; font-size: 0.875em; text-align: center; }
+	section.company div.info p { position: relative; margin-top: 3em; text-indent: 0.5em; line-height: 1.7; }
+	section.company div.info p:nth-of-type(1) { margin-top: 1em; } 
+	section.company div.info p:nth-of-type(1)::after { content: ""; position: absolute; bottom: -1.5em; left: 50%; width: 25vw; height: 2px; background: #085a8c;
+	transform: translateX(-50%); }
+	section.company div.info p:nth-of-type(2)::after { content: ""; position: absolute; bottom: -1.5em; left: 50%; width: 25vw; height: 2px; background: #085a8c;
+	transform: translateX(-50%); }
+	
+
+
+
+/*++++ section.slogan ++++*/
+
+	section.slogan { overflow: hidden; position: relative; margin-top: 70px; }
+	section.slogan div.txt_wrap { position: absolute; top: 50%; left: 50%; width: 100%; color: #fff; text-align: center; transform: translateX(-50%) translateY(-50%); }
+	section.slogan div.txt_wrap h2 { font-family: "NotoSansKR-Regular";}
+	section.slogan div.txt_wrap p.title { margin-bottom: 20px; font-size: 1.5625em; font-family: "NotoSansKR-Medium"; }
+	section.slogan div.txt_wrap p.desc { font-size: 0.875em; }
+
+	section.slogan img { display: block; width: 100%; }
+
+
+/*++++ section.vision ++++*/
+
+	section.vision { overflow: hidden; margin: 50px 6.25vw; }
+	section.vision ul { position: relative; }
+	section.vision ul li { position: relative; display: block; width: 86%; height: 250px; margin: 0 auto; }
+
+	section.vision ul li p.title { position: relative; width: 100%; height: 150px; }
+	section.vision ul li p.title > span { position: absolute; top: 50%; left: 50%; color: #fff; font-size: 1em; text-align: center;
+	transform: translateX(-50%) translateY(-50%); z-index: 5; }
+	section.vision ul li:nth-last-child(1) p.title > span { color: #222; }
+
+	section.vision ul li:nth-child(1) p.title::before { content: ""; position: absolute; top: 50%; left: 50%; width: 150px; height: 150px; border-radius: 50%; 
+	background: #085a8c; transform: translateX(-50%) translateY(-50%); z-index: 3; }
+	section.vision ul li:nth-child(2) p.title::before { content: ""; position: absolute; top: 50%; left: 50%; width: 150px; height: 150px; border-radius: 50%; 
+	background: #58b1ff; transform: translateX(-50%) translateY(-50%); z-index: 2; }
+	section.vision ul li:nth-child(3) p.title::before { content: ""; position: absolute; top: 50%; left: 50%; width: 150px; height: 150px; border-radius: 50%; 
+	background: #b3e6f3; transform: translateX(-50%) translateY(-50%); z-index: 1; }
+
+
+	section.vision ul li p.desc { margin-top: 1em; text-align: center; }
+
+
+	
+
+
+
+
+
+
+
+	
+
+
+}
+
+/* ===========mobile(end)============== */
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!      Da+s      !!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+/* ===========tablet(start)============== */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+
+/*++++ section.visual ++++*/
+	section.visual { overflow: hidden; position: relative; width: 100%; height: 23.4375vh; min-height: 240px; margin-top: 81px; }
+	section.visual img { display: block; width: 100%; object-fit: cover; }
+	section.visual div.txt_wrap { position: absolute; top: 50%; width: 100%; transform: translateY(-50%); }
+	section.visual div.txt_wrap > span { display: inline-block; position: relative; width: 50%; color: #fff; }
+	section.visual div.txt_wrap > span.pre_title { font-size: 1.125em; }
+	section.visual div.txt_wrap > span.pre_title > span { display: block; position: absolute; right: 1em; bottom: 0; }
+
+	section.visual div.txt_wrap > span.pre_title > span:nth-of-type(1) { animation-name: span_01; animation-duration: 7s; animation-iteration-count: infinite; }
+	section.visual div.txt_wrap > span.pre_title > span:nth-of-type(2) { animation-name: span_02; animation-duration: 7s; animation-iteration-count: infinite; }
+	section.visual div.txt_wrap > span.title { font-size: 3em; }
+
+	@keyframes span_01 {
+		0% {
+			opacity: 0;
+			transform: translateY(100%);
+		}
+		10% {
+			opacity: 1;
+			transform: translateY(0);
+		}
+		50% {
+			opacity: 1;
+			transform: translateY(0);
+		}
+		51% {
+			opacity: 0;
+			transform: translateY(100%);
+		}
+		100% {
+			opacity: 0;
+			transform: translateY(100%);
+		}
+	}
+
+	@keyframes span_02 {
+		0% {
+			opacity: 0;
+			transform: translateY(100%);
+		}
+		10% {
+			opacity: 0;
+			transform: translateY(100%);
+		}
+		50% {
+			opacity: 0;
+			transform: translateY(100%);
+		}
+		60% {
+			opacity: 1;
+			transform: translateY(0%);
+		}
+		100% {
+			opacity: 1;
+			transform: translateY(0%);
+		}
+	}
+
+
+
+/*++++ section.logo ++++*/
+
+	section.logo { margin: 70px 2.60416666666vw 0 2.60416666666vw; }
+	section.logo img { display: inline-block; width: 24.739583vw; min-width: 150px; margin-right: 35px; vertical-align: middle; }
+	section.logo p { display: inline-block; width: 60vw; line-height: 1.5; vertical-align: middle; }
+	section.logo p > span { color: #085a8c; font-size: 1.25em; font-weight: bold; }
+
+
+/*++++ section.company ++++*/
+
+	section.company { margin: 70px 2.60416666666vw 0 2.60416666666vw; }
+	section.company img { float: right; display: inline-block; width: 34%; }
+	section.company div.info { float: left; width: 60%; }
+	section.company div.info p { margin-bottom: 2em; text-indent: 0.5em; }
+	section.company div.info p:nth-last-of-type(1) { width: 142%; }
+
+
+
+/*++++ section.slogan ++++*/
+
+	section.slogan { position: relative; margin-top: 70px; }
+	section.slogan div.txt_wrap { position: absolute; top: 50%; left: 50%; color: #fff; text-align: center; transform: translateX(-50%) translateY(-50%); }
+	section.slogan div.txt_wrap h2 { font-family: "NotoSansKR-Regular";}
+	section.slogan div.txt_wrap p.title { font-size: 2.5em; margin-bottom: 20px; }
+
+	section.slogan img { display: block; width: 100%; }
+
+
+/*++++ section.vision ++++*/
+
+	section.vision { margin: 70px 2.60416666666vw; }
+	section.vision ul { position: relative; }
+	section.vision ul li { position: relative; display: block; width: 85%; height: 250px; margin: 0 auto; }
+
+	section.vision ul li:nth-child(1) p.title { position: absolute; top: 0; left: 0; }
+	section.vision ul li:nth-child(2) p.title { position: absolute; top: 0; right: 0; }
+	section.vision ul li:nth-child(3) p.title { position: absolute; top: 0; left: 0; }
+
+	section.vision ul li p.title { width: 235px; height: 235px; }
+	section.vision ul li p.title > span { position: absolute; top: 50%; left: 50%; color: #fff; font-size: 1.25em; text-align: center;
+	transform: translateX(-50%) translateY(-50%); z-index: 5; }
+	section.vision ul li:nth-last-child(1) p.title > span { color: #222; }
+
+	section.vision ul li:nth-child(1) p.title::before { content: ""; position: absolute; top: 50%; left: 50%; width: 235px; height: 235px; border-radius: 50%; 
+	background: #085a8c; transform: translateX(-50%) translateY(-50%); z-index: 3; }
+	section.vision ul li:nth-child(2) p.title::before { content: ""; position: absolute; top: 50%; left: 50%; width: 235px; height: 235px; border-radius: 50%; 
+	background: #58b1ff; transform: translateX(-50%) translateY(-50%); z-index: 2; }
+	section.vision ul li:nth-child(3) p.title::before { content: ""; position: absolute; top: 50%; left: 50%; width: 235px; height: 235px; border-radius: 50%; 
+	background: #b3e6f3; transform: translateX(-50%) translateY(-50%); z-index: 1; }
+
+	section.vision ul li:nth-child(1) p.title::after { content: ""; position: absolute; top: 50%; left: 100%; width: 15.625vw; max-width: 300px; height: 2px; background: #085a8c;
+	transform: translateY(-50%); z-index: 3; }
+	section.vision ul li:nth-child(2) p.title::after { content: ""; position: absolute; top: 50%; right: 100%; width: 15.625vw; max-width: 300px; height: 2px; background: #58b1ff;
+	transform: translateY(-50%); z-index: 3; }
+	section.vision ul li:nth-child(3) p.title::after { content: ""; position: absolute; top: 50%; left: 100%; width: 15.625vw; max-width: 300px; height: 2px; background: #b3e6f3;
+	transform: translateY(-50%); z-index: 3; }
+
+	section.vision ul li:nth-child(1) p.desc { position: absolute; top: 50%; right: 0; width: 14em; text-align: center; transform: translateY(-50%); }
+	section.vision ul li:nth-child(2) p.desc { position: absolute; top: 50%; left: 0; width: 15em; text-align: center; transform: translateY(-50%); }
+	section.vision ul li:nth-child(3) p.desc { position: absolute; top: 50%; right: 0; width: 13em; text-align: center; transform: translateY(-50%); }
+
+
+
+}
+
+
+/* ===========tablet(end)============== */
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!      Da+s      !!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+/* ===========desktop(start)============== */
+@media screen and (min-width: 1025px) {
+
+
+/*++++ section.visual ++++*/
+	section.visual { overflow: hidden; position: relative; width: 100%; height: 13.4375vh; min-height: 258px; margin-top: 120px; }
+	section.visual img { display: block; width: 100%; object-fit: cover; }
+	section.visual div.txt_wrap { position: absolute; top: 50%; width: 100%; transform: translateY(-50%); }
+	section.visual div.txt_wrap > span { display: inline-block; position: relative; width: 50%; color: #fff; }
+	section.visual div.txt_wrap > span.pre_title { font-size: 1.125em; }
+	section.visual div.txt_wrap > span.pre_title > span { display: block; position: absolute; right: 1em; bottom: 0; }
+
+	section.visual div.txt_wrap > span.pre_title > span:nth-of-type(1) { animation-name: span_01; animation-duration: 7s; animation-iteration-count: infinite; }
+	section.visual div.txt_wrap > span.pre_title > span:nth-of-type(2) { animation-name: span_02; animation-duration: 7s; animation-iteration-count: infinite; }
+	section.visual div.txt_wrap > span.title { font-size: 3em; }
+
+	@keyframes span_01 {
+		0% {
+			opacity: 0;
+			transform: translateY(100%);
+		}
+		10% {
+			opacity: 1;
+			transform: translateY(0);
+		}
+		50% {
+			opacity: 1;
+			transform: translateY(0);
+		}
+		51% {
+			opacity: 0;
+			transform: translateY(100%);
+		}
+		100% {
+			opacity: 0;
+			transform: translateY(100%);
+		}
+	}
+
+	@keyframes span_02 {
+		0% {
+			opacity: 0;
+			transform: translateY(100%);
+		}
+		10% {
+			opacity: 0;
+			transform: translateY(100%);
+		}
+		50% {
+			opacity: 0;
+			transform: translateY(100%);
+		}
+		60% {
+			opacity: 1;
+			transform: translateY(0%);
+		}
+		100% {
+			opacity: 1;
+			transform: translateY(0%);
+		}
+	}
+
+
+
+/*++++ section.logo ++++*/
+
+	section.logo { margin-top: 120px; }
+	section.logo img { display: inline-block; width: 15.625vw; min-width: 250px; margin-right: 70px; vertical-align: middle; }
+	section.logo p { display: inline-block; line-height: 1.8; vertical-align: middle; }
+	section.logo p > span { color: #085a8c; font-size: 1.25em; font-weight: bold; }
+
+
+/*++++ section.company ++++*/
+
+	section.company { margin-top: 120px; }
+	section.company img { float: right; display: inline-block; width: 34%; }
+	section.company div.info { float: left; width: 60%; }
+	section.company div.info p { margin: 2em 0; text-indent: 0.5em; }
+
+
+
+/*++++ section.slogan ++++*/
+
+	section.slogan { position: relative; margin-top: 120px; }
+	section.slogan div.txt_wrap { position: absolute; top: 50%; left: 50%; color: #fff; text-align: center; transform: translateX(-50%) translateY(-50%); }
+	section.slogan div.txt_wrap h2 { font-family: "NotoSansKR-Regular";}
+	section.slogan div.txt_wrap p.title { font-size: 2.5em; margin-bottom: 20px; }
+
+	section.slogan img { display: block; width: 100%; }
+
+
+/*++++ section.vision ++++*/
+
+	section.vision { margin-top: 120px; }
+	section.vision ul { position: relative; height: 55vh; min-height: 470px; }
+	section.vision ul li { width: 250px; }
+	section.vision ul li:nth-child(1) { position: absolute; top: 0; left: 15%; z-index: 15; }
+	section.vision ul li:nth-child(2) { position: absolute; top: 0; left: 35%; z-index: 14; }
+	section.vision ul li:nth-child(3) { position: absolute; top: 0; left: 55%; z-index: 13; }
+
+	section.vision ul li:nth-child(1) p.title { position: relative; margin-bottom: 85px; }
+	section.vision ul li:nth-child(2) p.title { position: relative; margin-bottom: 125px; }
+	section.vision ul li:nth-child(3) p.title { position: relative; margin-bottom: 165px; }
+
+
+	section.vision ul li p.title { position: relative; width: 100%; height: 250px; margin: 0 auto; }
+	section.vision ul li p.title > span { position: absolute; top: 50%; left: 50%; color: #fff; font-size: 1.3em; text-align: center;
+	transform: translateX(-50%) translateY(-50%); z-index: 5; }
+	section.vision ul li:nth-last-child(1) p.title > span { color: #222; }
+
+	section.vision ul li:nth-child(1) p.title::before { content: ""; position: absolute; top: 50%; left: 50%; width: 250px; height: 250px; border-radius: 50%; 
+	background: #085a8c; transform: translateX(-50%) translateY(-50%); z-index: 3; }
+	section.vision ul li:nth-child(2) p.title::before { content: ""; position: absolute; top: 50%; left: 50%; width: 250px; height: 250px; border-radius: 50%; 
+	background: #58b1ff; transform: translateX(-50%) translateY(-50%); z-index: 2; }
+	section.vision ul li:nth-child(3) p.title::before { content: ""; position: absolute; top: 50%; left: 50%; width: 250px; height: 250px; border-radius: 50%; 
+	background: #b3e6f3; transform: translateX(-50%) translateY(-50%); z-index: 1; }
+
+	section.vision ul li:nth-child(1) p.title::after { content: ""; position: absolute; top: 100%; left: 50%; width: 2px; height: 0; background: #085a8c;
+	transform: translateX(-50%); z-index: 3; }
+	section.vision ul li:nth-child(1) p.title:hover::after { height: 80px; transition: height 0.3s; }
+
+	section.vision ul li:nth-child(2) p.title::after { content: ""; position: absolute; top: 100%; left: 50%; width: 2px; height: 0; background: #58b1ff;
+	transform: translateX(-50%); z-index: 3; }
+	section.vision ul li:nth-child(2) p.title:hover::after { height: 120px; transition: height 0.3s; }
+
+	section.vision ul li:nth-child(3) p.title::after { content: ""; position: absolute; top: 100%; left: 50%; width: 2px; height: 0; background: #b3e6f3;
+	transform: translateX(-50%); z-index: 3; }
+	section.vision ul li:nth-child(3) p.title:hover::after { height: 160px; transition: height 0.3s; }
+
+	section.vision ul li p.desc { position: absolute; top: 100%; left: 50%; width: 100%; text-align: center; transform: translateX(-50%); opacity: 0;  }
+	section.vision ul li:nth-child(1) p.title:hover + p.desc { opacity: 1; transition: opacity 0.6s 0.3s; }
+	section.vision ul li:nth-child(2) p.title:hover + p.desc { opacity: 1; transition: opacity 0.6s 0.3s; }
+	section.vision ul li:nth-child(3) p.title:hover + p.desc { opacity: 1; transition: opacity 0.6s 0.3s; }
+
+}
+
+
+
+/* ===========desktop(end)============== */

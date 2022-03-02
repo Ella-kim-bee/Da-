@@ -1,0 +1,103 @@
+/* ===========mobile(start)============== */
+@media screen and (max-width: 767px) {
+
+section.visual { width: 100%; height: 100px; margin-top: 50px; }
+section.visual img { display: block; width: 100%; height: 100%; object-fit: cover;}
+section.notice { overflow: hidden; text-align: left; }
+section.notice h1 { padding-left: 6.25vw; padding-top: 20px; font-family: 'NotoSansKR-Bold'; font-size: 18px; }
+section.notice h2 {  padding-left: 6.25vw; font-family: 'NotoSansKR-Medium'; font-size: 15px;}
+section.notice table { width: 90vw; margin: 6.25vw auto;}
+section.notice table thead { background: #085a8c; font-family: 'NotoSansKR-Regular'; color: #fff; font-size: 15px; text-align: center;}
+section.notice table thead th { padding: 5px; }
+section.notice table tbody td { padding: 5PX; border-bottom: 1px solid #085a8c; font-size: 13px; }
+section.notice table tbody tr>td:last-child {text-align: center; vertical-align: middle; }
+section.notice p { text-align: center; padding: 0 0 20px; font-size: 12px; }
+section.notice p span { padding: 0 5px; }
+
+
+}
+
+
+/* ===========mobile(end)============== */
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!      Da+s      !!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+
+
+/* ===========tablet(start)============== */
+@media screen and (min-width: 768px) {
+
+section.visual { width: 100%; height: 150px; margin-top: 80px; }
+section.visual img { display: block; width: 100%; height: 100%; object-fit: cover;}
+section.notice { text-align: left; height: calc( 100vh - 418px); }
+section.notice h1 { padding-top: 40px; padding-left: 3.2552vw; font-family: 'NotoSansKR-Bold'; font-size: 20px; }
+section.notice h2 { padding-left: 3.2552vw; font-family: 'NotoSansKR-Medium'; font-size: 16px; }
+section.notice table { width: 93.4896vw; margin: 3.2552vw; }
+section.notice table thead { background: #085a8c; font-family: 'NotoSansKR-Regular'; color: #fff; font-size: 15px; text-align: center; }
+section.notice table thead th { padding: 5px; }
+section.notice table tbody td { padding: 5px; border-bottom: 1px solid #085a8c; font-size: 13px; }
+section.notice table tbody tr>td:last-child { text-align: center; vertical-align: middle; }
+section.notice p { text-align: center; padding: 0 0 20px; }
+section.notice p span { padding: 0 5px; }
+
+}
+
+
+/* ===========tablet(end)============== */
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!      Da+s      !!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+/* ===========desktop(start)============== */
+@media screen and (min-width: 1024px) {
+
+
+
+body { height: auto; }
+
+section.visual { width: 100%; height: 15vh; margin-top: 120px; }
+section.visual img { display: block; width: 100%; height: 100%; object-fit: cover;}
+section.notice { width: 100%; height: calc( 100vh - 420px); max-width: 1180px; margin: 0 auto 120px auto; }
+section.notice h1 { display: inline-block; padding-top: 40px; font-family: 'NotoSansKR-Bold'; font-size: 22px; }
+section.notice h2 { display: inline-block; padding-left: 20px; font-family: 'NotoSansKR-Medium'; font-size: 16px; color: #085a8c; }
+section.notice table { width: 100%; max-width: 1180px; margin: 20px 40px; text-align: left; margin: 0 auto; }
+section.notice table thead { background: #085a8c; font-family: 'NotoSansKR-Regular'; color: #fff; font-size: 15px;}
+section.notice table thead th { padding: 5px; } 
+section.notice table tbody td { padding: 10px; font-size: 14px; text-align: center; } 
+section.notice table tbody td.new::after { content:"*new*"; padding-left: 5px; font-size: 10px; color: red; }
+section.notice table tbody tr { border-bottom: 1px solid #085a8c; }
+section.notice table tbody tr>td:nth-child(2) { text-align: left; }
+section.notice table tbody tr>td:nth-child(2):hover { text-decoration: underline; }
+section.notice table tbody tr>td:last-child { text-align: center; vertical-align: middle; }
+section.notice p { text-align: center; padding: 10px 0 20px; font-size: 12px; }
+section.notice p span { padding: 0 5px; }
+
+
+}
+
+
+
+/* ===========desktop(end)============== */

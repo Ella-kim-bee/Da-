@@ -1,0 +1,558 @@
+/*+++++++++++++++++++++++ media query +++++++++++++++++++++++*/
+/* index.html */
+
+
+
+/* ===========mobile(start)============== */
+@media screen and (max-width: 767px) {
+
+
+	/*++++section.visual++++*/
+
+	section.visual { overflow: hidden; position: relative; width: 100vw; height: 520px; margin: 50px 0 70px 0; }
+	section.visual div.slides_wrap { position: relative; width: 100%; height: 100%; }
+	section.visual div.slide { display: none; position: absolute; left:0; top: 0; z-index: 1; width: 100%; height: 100%; }
+	section.visual div.slide:nth-of-type(1) { display: block; }
+
+	section.visual img { display: block; width: 100%; height: 100%; object-fit: cover; }
+	section.visual div.info_00 { position: absolute; left: 14%; bottom: 20%; z-index: 11; width: 71.8750vw; margin-bottom: 20px; text-align: center; }
+	section.visual div.info_00 img { margin: 0 auto; width: 172px; object-fit: cover; }
+	section.visual div.info_00 p.content { font-size: 0.875em; color: #fff; line-height: 1.5; }
+
+	section.visual div.info_01 { position: absolute; left: 25%; bottom: 20%; z-index: 11; width: 52.0833vw; margin-bottom: 20px; text-align: center; }
+	section.visual div.info_01 img { width: 60px; object-fit: cover; margin: 0 auto 10px; } 
+	section.visual div.info_01 p.content { font-size: 0.875em; color: #fff; font-weight: bold; border-bottom: 1px solid #085a8c; }
+
+	section.visual div.info_02 { position: absolute; left: 7%; top: 8%; z-index: 11; width: 83%; }
+	section.visual div.info_02 h2.title { font-size: 1.563em; color: #085a8c; margin-bottom: 30px; }
+	section.visual div.info_02 p.interviewee { font-size: 2em; color: #333; font-weight: bold; margin-bottom: 30px; }
+	section.visual div.info_02 p.content { color: #333; } 
+	
+	section.visual div.pagination { position: absolute; left: 0; bottom: 0; z-index: 20; width: 100%; margin-bottom: 20px; text-align: center; }
+	section.visual div.pagination > button { display: inline-block; padding: 0 0.5625em; }
+	section.visual div.pagination > button > span { display: inline-block; width: 11px; height: 11px; border-radius: 50%; background: #fff; }
+	section.visual div.pagination > button.active > span { background: #085a8c; }
+
+
+
+/*++++section.dramas++++*/
+
+	section.dramas { overflow: hidden; padding-bottom: 40px; margin-bottom: 70px; }
+	section.dramas div.inner_wrap { width: 87.5vw; }
+	section.dramas div.inner_wrap_02 { width: 90.625vw; }
+	section.dramas div.view_mask { overflow: hidden; position: relative; width: 100%; }
+	section.dramas div.view_mask ul { width: 600%; }
+	section.dramas div.view_mask li { float: left; width: 16.66667%; padding: 0 1.5625vw; text-align: center; }
+	section.dramas div.view_mask li > a { position: relative; display: block; width: 100%; height:100%; }
+	section.dramas div.view_mask li a img { display: block; width: 100%; height: 100%; }
+	section.dramas div.view_mask li > a::after { content:""; position: absolute; right:0; bottom: 0; padding: 0.188em 1.250em; font-size: 1em; background: #085a8c; color: #fff; text-align: center; }
+	section.dramas div.view_mask li > a.label_01::after { content:"지상파"; }
+	section.dramas div.view_mask li > a.label_02::after  { content:"케이블"; }
+	section.dramas div.view_mask li > a.label_03::after  { content:"제3세계"; }
+	section.dramas div.view_mask li > a.label_04::after  { content:"웹드라마"; }
+	section.dramas div.view_mask li > a.label_05::after  { content:"기타"; }
+	
+	section.dramas div.view_mask li > a > img { display: block; width: 100%; height: auto; margin-bottom: 0.25em; }
+	section.dramas div.view_mask li > p.title { font-size: 1.125em; color: #333;  }
+	section.dramas div.view_mask li > p.genre { font-size: 0.938em;  color: #333; }
+	section.dramas div.view_mask li > p.epi { font-size: 0.875em;  color: #333; }
+	section.dramas div.view_mask li > div.stars { margin-top: 10px; font-size: 1em; color: red; }
+
+	section.dramas button.dir_btns > span { color: #333; }
+	
+
+
+/*++++section.original++++*/
+
+	section.original { overflow: hidden; position: relative; width: 100vw; height: 600px; margin-bottom: 70px; }
+	section.original h2 { display: inline-block; margin-bottom: 20px; }
+	
+	section.original div.infos_wrap { width: 100%; height: 300px; background: #fff; margin-bottom: 20px; }
+	section.original div.infos_wrap div.inner_wrap_half { position: relative; margin: 0 6.25vw; }
+	section.original div.infos_wrap div.info_wrap { position: absolute; display: none; }
+	section.original div.infos_wrap div.info_wrap:first-of-type { display: block; }
+
+	section.original div.pagination { display: inline-block; position: absolute; right: 0; top: 6%; }
+	section.original div.pagination button.dots { height: 27px; }
+	section.original div.pagination button span { width: 27px; height: 27px; padding: 1px 8px; margin-left: 10px; border-radius: 50%; background: #ccc; color: #6e6e6e;}
+	section.original div.pagination button.active > span { background: #085a8c; color: #fff; } 
+	section.original div.pagination button:hover > span { background: #085a8c; color: #fff;}
+
+	section.original div.info_wrap p.desc { display: none; }	
+	section.original div.info_wrap p.genre { margin-top: 25px; width: 100%; } 
+	section.original div.info_wrap p.genre > span { padding: 0.125em 20.88749px; border: 1px solid #130c0e; } 
+	section.original div.info_wrap p.genre > span:nth-of-type(1) { background: #130c0e; color: #fff; }
+	
+	section.original div.imgs_wrap { position: relative; width: 100vw; height: 50vh; }
+	section.original div.imgs_wrap div.img_wrap { position: absolute; width: 100%; height: 100%; display: none; }
+	section.original div.imgs_wrap div.img_wrap:first-of-type { display: block; }
+	section.original div.imgs_wrap div.img_wrap img { display: block; width: 100%; height: 300px; object-fit: cover; }
+
+	section.original a.btn_more { position: absolute; right: -90px; bottom: -310px; z-index: 500; border-color: #fff; color: #fff; }
+
+
+
+/*++++section.schdule++++*/
+	
+	section.schedule { overflow: hidden; margin-bottom: 70px; }
+	section.schedule div.inner_wrap { overflow: hidden; width: 87.5vw; height: 190px; margin : 0 6.25vw; }
+	section.schedule h2 { overflow: hidden; float: left; margin-bottom: 20px; }
+	section.schedule a.btn_more { float: right; }
+	section.schedule div.view_mask { clear: both; }
+	section.schedule ul { width: 300%; }
+	section.schedule ul > li { position: relative; display: inline-block; width: 33.3333%; } 
+	section.schedule img { display: inline-block; width: 100%; height: 100%; object-fit: cover;}
+	section.schedule li > p.hours { position: absolute; width : 100%; left: 20px; top: 15px; color: #fff;}
+	section.schedule li > p.title { position: absolute; left: 20px; top: 35px; color: #fff; font-size: 1.125em; }
+	section.schedule li:nth-of-type(2) > p.hours { color: #130c0e; }
+	section.schedule li:nth-of-type(2) > p.title { color: #130c0e; }
+
+
+
+
+
+/*++++section.trailers++++*/
+	section.trailers { overflow: hidden; position: relative; padding-bottom: 40px; margin-bottom: 70px; }
+	section.trailers div.inner_wrap { width: 87.5vw; }
+	section.trailers div.inner_wrap_02 { width: 90.6250vw; }
+	section.trailers h2 { margin-bottom: 20px; }
+	section.trailers div.view_mask { overflow: hidden; width: 100%; }
+	section.trailers div.view_mask ul { width: 600%; }
+	section.trailers div.view_mask li { float: left; width: 16.666667%; padding: 0 1.5625vw; }
+	section.trailers div.view_mask li div.video_wrap { overflow: hidden; position: relative; width: 100%; height: 100%; }
+	section.trailers div.view_mask li video { display: block; width: 100%; height: 100%; }
+	section.trailers div.view_mask li div.video_wrap > span { position: absolute; right: 10px; bottom: 10px; border-radius: 5px; padding: 0.125em 1.125em; font-size: 0.875em; background: #085a8c; color: #fff; } 
+
+
+	section.trailers div.info_wrap p.desc { font-size: 1em; margin-bottom: 5px;} 
+	section.trailers div.info_wrap p.title { font-size: 0.938em; color: #085a8c; }
+	section.trailers div.info_wrap p.count { display: inline-block; width: 100%; font-size: 0.813em; color: #666; }
+	section.trailers div.info_wrap p.count span:nth-of-type(1) { padding-right: 10px; }
+	section.trailers div.info_wrap p.count span:nth-of-type(2) { position: relative; padding-left: 10px; }
+	section.trailers div.info_wrap p.count span:nth-of-type(2)::before { content: ""; position: absolute; left: 0; top: 4px; width: 1px; height: 12px; background: #666; }
+	
+	section.trailers button.dir_btns > span { color: #333; }
+	
+	
+
+
+/*++++section.dapluspick++++*/
+
+	section.dapluspick { overflow: hidden; margin-bottom: 70px; }
+	
+	section.dapluspick ul { width: 100%; height: 140.6250vw; margin-top: 20px; }
+	section.dapluspick ul > li { overflow: hidden; position: relative; width: 100%; height: 46.8750vw; z-index:0; }
+		
+	section.dapluspick ul > li:nth-child(1) { background: url("../images/img_index_da+s_01_M.jpg") no-repeat; background-size: cover; }
+	section.dapluspick ul > li:nth-child(2) { background: url("../images/img_index_da+s_02_M.jpg") no-repeat; background-size: cover; }
+	section.dapluspick ul > li:nth-child(3) { background: url("../images/img_index_da+s_03_M.jpg") no-repeat; background-size: cover; }
+
+	section.dapluspick img.title { display: none; }
+	section.dapluspick div.info { position: absolute; left:0; top: 37%; z-index: 4; width: 100%; height: 33.3333%; text-align: center; }
+	section.dapluspick p.desc { margin-bottom: 0.875em; font-size: 0.875em; color: #fff; filter: drop-shadow(0 0 0.1em #999); }
+	section.dapluspick li a.btn_more { border-color : #fff; color: #fff; filter: drop-shadow(0 0 0.1em #999); } 
+ 
+
+
+ /*++++section.event++++*/
+
+	section.event { position: relative; overflow: hidden; padding-bottom: 40px; margin-bottom: 70px;}
+	section.h2 { margin-bottom: 20px; }
+	section.event div.inner_wrap { overflow: hidden; width: 87.5vw; margin : 0 6.25vw; } 
+	section.event ul { width: 600%; }
+	section.event ul li { float: left; width: 16.666667%; }
+	section.event ul li a { display: block; width: 100%; height: 100%; }
+	section.event ul li img { display: block; width: 87.5vw; height: 74.6875vw; object-fit: cover; } 
+	section.event button.dir_btns[class ~= "prev"] { left: 1.250em; }
+	section.event button.dir_btns[class ~= "next"] { right: 1.250em; }
+	section.event button.dir_btns > span { color: #333; }
+
+
+}
+
+/* ===========mobile(end)============== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===========tablet(start)============== */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+
+	/*++++section.visual++++*/
+
+
+	section.visual { overflow: hidden; position: relative; width: 100vw; height: calc(100vh - 80px); margin: 81px 0 100px 0; }
+	section.visual div.slides_wrap { position: relative; width: 100%; height: 100%; }
+	section.visual div.slide { display: none; position: absolute; left:0; top: 0; z-index: 1; width: 100%; height: 100%; }
+	section.visual div.slide:nth-of-type(1) { display: block; }
+
+	section.visual img { display: block; width: 100%; height: 100%; object-fit: cover; }
+	section.visual div.info_00 { position: absolute; left: 6%; bottom: 20%; z-index: 11; width: 52.0833vw; }
+	section.visual div.info_00 h2 img { width: 352px; object-fit: cover; margin-bottom: 30px; }
+	section.visual div.info_00 p.content { font-size: 1.25em; color: #fff; line-height: 1.5; }
+
+	section.visual div.info_01 { position: absolute; left: 15%; bottom: 27%; z-index:11; width: 71.6146vw; text-align: center; border-bottom: 3px solid #085a8c; }
+	section.visual div.info_01 h2 img { width: 120px; object-fit: cover; margin: 0 auto 15px; } 
+	section.visual div.info_01 p.content { font-size: 2.188em; color: #fff; font-weight: bold; }
+
+	section.visual div.info_02 { position: absolute; left: 7%; top: 8%; z-index: 11; width: 52.0833vw; }
+	section.visual div.info_02 h2.title { font-size: 3.75em; color: #085a8c; margin-bottom: 60px; }
+	section.visual div.info_02 p.interviewee { font-size: 4.688em; color: #333; font-weight: bold; margin-bottom: 60px; }
+	section.visual div.info_02 p.content { font-size: 1.25em; color: #333; } 
+
+	section.visual div.pagination { position: absolute; left: 0; bottom: 0; z-index: 20; width: 100%; margin-bottom: 20px; text-align: center; }
+	section.visual div.pagination > button { display: inline-block; padding: 0.625em 0.938em; }
+	section.visual div.pagination > button > span { display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: #fff; }
+	section.visual div.pagination > button.active > span { background: #085a8c; }
+	
+
+
+/*++++section.dramas++++*/
+
+	section.dramas { overflow: hidden; padding-bottom: 50px; margin-bottom: 100px; }
+	section.dramas div.inner_wrap { width: 93.489583vw; }
+	section.dramas div.inner_wrap_02 { width: 95.3125vw; }
+	section.dramas div.view_mask { overflow: hidden; position: relative; width: 100%; }
+	section.dramas div.view_mask ul { width: 200%; }
+	section.dramas div.view_mask li { float: left; width: 16.66667%; padding: 0 0.9114583vw; }
+	section.dramas div.view_mask li > a { position: relative; }
+	section.dramas div.view_mask li > a::after { content:""; position: absolute; right:0; bottom: 0; padding: 0.188em 1.250em; font-size: 1em; background: #085a8c; color: #fff; text-align: center; }
+	section.dramas div.view_mask li > a.label_01::after { content:"지상파"; }
+	section.dramas div.view_mask li > a.label_02::after  { content:"케이블"; }
+	section.dramas div.view_mask li > a.label_03::after  { content:"제3세계"; }
+	section.dramas div.view_mask li > a.label_04::after  { content:"웹드라마"; }
+	section.dramas div.view_mask li > a.label_05::after  { content:"기타"; }
+	
+	section.dramas div.view_mask li a { display: block; width: 100%; height: 100%; }
+	section.dramas div.view_mask li a img { display: block; width: 100%; height: auto; margin-bottom: 0.25em; }
+	section.dramas div.view_mask li > p.title { font-size: 1.25em; color: #333;  }
+	section.dramas div.view_mask li > p.genre { font-size: 1em;  color: #333; }
+	section.dramas div.view_mask li > p.epi { font-size: 0.938em;  color: #333; }
+	section.dramas div.view_mask li > div.stars { margin-top: 10px; font-size: 1.125em; color: red; }
+
+
+	
+
+
+/*++++section.original++++*/
+
+	section.original { overflow: hidden; position: relative; width: 100vw; height: 600px; margin-bottom: 100px; }
+	section.original h2 { display: inline-block; margin: 30px 80px 40px 0; }
+	
+	section.original div.infos_wrap { float: left; position: absolute; top:0; z-index: 10; width: 50%; height:100%; background: #fff; }
+	section.original div.infos_wrap div.inner_wrap_half { position: relative; width: 85%; height: 100%; margin-left: 3.2552vw; }
+	section.original div.infos_wrap div.info_wrap { position: absolute; display: none; }
+	section.original div.infos_wrap div.info_wrap:first-of-type { display: block; }
+
+	section.original div.pagination { display: inline-block; position: absolute; right: 0; top: 7%; }
+	section.original div.pagination span { padding: 2px 10px; margin-right: 10px; border-radius: 50%; background: #ccc; color: #6e6e6e;}
+	section.original div.pagination button.active > span { background: #085a8c; color: #fff; } 
+	section.original div.pagination button:hover > span { background: #085a8c; color: #fff;}
+
+	section.original div.info_wrap p.desc { margin-top: 1.250em; }	
+	section.original div.info_wrap p.genre { margin-top: 40px;} 
+	section.original div.info_wrap p.genre > span { padding: 0.125em 1.563em; border: 1px solid #130c0e; } 
+	section.original div.info_wrap p.genre > span:nth-of-type(1) { background: #130c0e; color: #fff; }
+	
+	section.original div.imgs_wrap { float: right; position: absolute; z-index: 0; right: 0; width: 50vw; height: 100%; }
+	section.original div.imgs_wrap div.img_wrap { display: none; width:100%; height: 100%; }
+	section.original div.imgs_wrap div.img_wrap:first-of-type { display: block; }
+	section.original div.imgs_wrap div.img_wrap img { display: block; width: 100%; height:100%; object-fit: cover; }
+
+	section.original a.btn_more { position: absolute; left: 0; bottom: -85px; }
+
+
+
+
+/*++++section.schdule++++*/
+	
+	section.schedule { margin-bottom: 100px; }
+	section.schedule h2 { overflow: hidden; float: left; margin: 0 3.2552vw 20px 3.2552vw; }
+	section.schedule a.btn_more { float: right; margin: 0 3.2552vw 20px 3.2552vw; }
+	section.schedule div.view_mask { clear: both; margin: 0 3.2552vw; }
+	section.schedule ul > li { position: relative; display: inline-block; width: 33.3333%; } 
+	section.schedule img { display: inline-block; width: 100%; height:100%; object-fit: cover;}
+	section.schedule li > p.hours { position: absolute; left: 10px; top: 10px; width: 100%; color: #fff;}
+	section.schedule li > p.title { position: absolute; left: 10px; top: 30px; width: 100%; color: #fff; font-size: 1.125em; }
+	section.schedule li:nth-of-type(2) > p.hours { color: #130c0e; }
+	section.schedule li:nth-of-type(2) > p.title { color: #130c0e; }
+
+
+
+
+
+/*++++section.trailers++++*/
+
+	section.trailers { overflow: hidden; position: relative; padding-bottom: 50px; margin-bottom: 100px; }
+	section.trailers div.inner_wrap { width: 93.489583vw; }
+	section.trailers div.inner_wrap_02 { width: 95.3125vw; }
+	section.trailers h2 { margin-bottom: 20px; }
+	section.trailers div.view_mask { overflow: hidden; width: 100%; }
+	section.trailers div.view_mask ul { width: 300%; }
+	section.trailers div.view_mask li { float: left; width: 16.666667%; padding: 0 0.9114583vw; }
+	section.trailers div.view_mask li div.video_wrap { overflow: hidden; position: relative; width: 100%; height: 100%; }
+	section.trailers div.view_mask li video { display: block; width: 100%; height: 100%; }
+	section.trailers div.view_mask li div.video_wrap > span { position: absolute; right: 10px; bottom: 10px; border-radius: 5px; padding: 0.125em 1.125em; font-size: 0.875em; background: #085a8c; color: #fff; } 
+	
+	section.trailers div.info_wrap p.desc { font-size: 1.125em; margin-bottom: 5px;} 
+	section.trailers div.info_wrap p.title { font-size: 1em; color: #085a8c; }
+	section.trailers div.info_wrap p.count { display: inline-block; width: 100%; font-size: 0.875em; color: #666; }
+	section.trailers div.info_wrap p.count span:nth-of-type(1) { padding-right: 10px; }
+	section.trailers div.info_wrap p.count span:nth-of-type(2) { position: relative; padding-left: 10px; }
+	section.trailers div.info_wrap p.count span:nth-of-type(2)::before { content: ""; position: absolute; left: 0; top: 4px; width: 1px; height: 12px; background: #666; }
+	
+	
+	
+
+
+/*++++section.dapluspick++++*/
+
+	section.dapluspick { overflow: hidden; margin-top: 100px; margin-bottom: 100px; }
+	section.dapluspick h2 { margin: 0 3.2552vw; }
+	
+	section.dapluspick ul { width: 100%; height: 78.1250vw; margin-top: 20px; }
+	section.dapluspick ul > li { overflow: hidden; position: relative; width: 100%; height: 26.0417vw; z-index:0; }
+		
+	section.dapluspick ul > li:nth-child(1) { background: url("../images/img_index_da+s_01_T.jpg") no-repeat center center; background-size: cover; color: #fff; }
+	section.dapluspick ul > li:nth-child(2) { background: url("../images/img_index_da+s_02_T.jpg") no-repeat center center; background-size: cover; }
+	section.dapluspick ul > li:nth-child(3) { background: url("../images/img_index_da+s_03_T.jpg") no-repeat center center; background-size: cover; color: #fff; }
+
+	section.dapluspick img.title { display: none; }
+	section.dapluspick div.info { position: absolute; left:0; top: 45%; z-index: 4; width: 100%; height: 33.3333%; text-align: center; }
+	section.dapluspick p.desc { margin-bottom: 1em; font-size: 1em; color: #fff; }
+	section.dapluspick li a.btn_more { border: 1px solid #fff; color: #fff; } 
+ 
+
+
+ /*++++section.event++++*/
+
+	section.event { overflow: hidden; margin: 0 3.2552vw; padding-bottom: 50px; margin-bottom: 100px;}
+	section.h2 { margin-bottom: 20px; }
+	section.event div.inner_wrap { position: relative;}
+
+	section.event ul { width: 200%; }
+	section.event ul li { float: left; width: 16.666667%; }
+	section.event ul li a { display: block; width: 100%; height: 100%; }
+	section.event ul li img { display: block; width: 100%; object-fit: cover; } 
+
+	section.event button.dir_btns[class ~= "prev"] { left: 0; }
+	section.event button.dir_btns[class ~= "next"] { right: 0; }
+
+
+
+}
+
+
+/* ===========tablet(end)============== */
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!      Da+s      !!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+/* ===========desktop(start)============== */
+@media screen and (min-width: 1025px) {
+
+
+/*++++section.visual++++*/
+
+	section.visual { position: relative; width: 100%; height: calc(100vh - 120px); margin: 120px 0 120px 0; }
+	section.visual div.slides_wrap { position: relative; width: 100%; height: 100%; }
+	section.visual div.slide { position: absolute; display: none; left: 0; top: 0; z-index: 1; width: 100%; height: 100%; object-fit: cover; }
+	section.visual div.slide:nth-child(1) { display: block; }
+	section.visual div.slide div.rel { width: 100%; height: 100%; }
+
+	section.visual img { display: block; width: 100%; height: 100%; object-fit: cover; }
+	section.visual div.info_00 { position: absolute; right: 10%; top: 45%; z-index: 11; width: 400px; height: 200px; text-align: right; }
+	section.visual div.info_00 img { width: 352px; height: 124px; object-fit: cover; margin-left: 50px; }
+	section.visual div.info_00 p.content { font-size: 1.5em; color: #fff; line-height: 1.5; }
+
+	section.visual div.info_01 { position: absolute; left: 19%; top: 24%; z-index:11; width: 450px; height: 200px; border-bottom: 3px solid #085a8c;}
+	section.visual div.info_01 img { width: 208px; height: 98px; object-fit: cover; margin-bottom: 10px; } 
+	section.visual div.info_01 p.content { font-size: 1.875em; color: #fff; }
+
+	section.visual div.info_02 { position: absolute; left: 24%; top: 20%; z-index: 11; width: 480px; height: 280px;}
+	section.visual div.info_02 h2.title { font-size: 2.5em; color: #085a8c; margin-bottom: 20px; }
+	section.visual div.info_02 p.interviewee { font-size: 4em; color: #333; font-weight: bold; margin-bottom: 20px; }
+	section.visual div.info_02 p.content { font-size: 1.5em; color: #fff; } 
+	
+	section.visual div.pagination { position: absolute; left: 0; bottom: 0; z-index: 20; width: 100%; margin-bottom: 30px; text-align: center; }
+	section.visual div.pagination > button { display: inline-block; padding: 10px 15px; }
+	section.visual div.pagination > button > span { display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: #fff; }
+	section.visual div.pagination > button:hover > span { background: #085a8c; }
+	section.visual div.pagination > button.active > span { background: #085a8c; }
+	
+
+
+
+/*++++section.dramas++++*/
+
+	section.dramas { overflow: hidden; margin-bottom: 120px; }
+	section.dramas div.view_mask { overflow: hidden; position: relative; width: 1200px; margin: 0 auto; }
+	section.dramas div.view_mask ul { width: 150%; }
+	section.dramas div.view_mask li { float: left; position: relative; width: 16.66667%; padding: 0 10px; }
+	section.dramas div.view_mask li > a::after { content:""; position: absolute; right:0; bottom:0; z-index: 3; padding: 3px 20px; font-size: 1em; background: #085a8c; color: #fff; text-align: center; }
+	section.dramas div.view_mask li > a.label_01::after { content:"지상파"; }
+	section.dramas div.view_mask li > a.label_02::after { content:"케이블"; }
+	section.dramas div.view_mask li > a.label_03::after { content:"제3세계"; }
+	section.dramas div.view_mask li > a.label_04::after { content:"웹드라마"; }
+	section.dramas div.view_mask li > a.label_05::after { content:"기타"; }
+	
+	section.dramas div.view_mask li > a { display: block; position: relative; width: 100%; height: 100%; }
+	section.dramas div.view_mask li > a::before { transition: all 0.6s; }
+	section.dramas div.view_mask li > a:hover::before { content: ""; display: block; position: absolute; z-index: 2; width: 100%; height: 100%; border: 5px solid #085a8c; }
+	section.dramas div.view_mask li a img { position: relative; display: block; width: 100%; height: 100%; }
+	section.dramas div.view_mask li > p.title { font-size: 1.25em; color: #333; }
+	section.dramas div.view_mask li > p.genre { font-size: 1em;  color: #333; }
+	section.dramas div.view_mask li > p.epi { font-size: 0.938em;  color: #333; }
+	section.dramas div.view_mask li > div.stars { margin-top: 10px; font-size: 1em; color: #db1537; }
+
+	section.dramas button.dir_btns { position: absolute; top: 0; z-index: 10; width: 60px; height: 429px; }
+	section.dramas button.prev { left: 0; background: url("../images/btn_common_prev_D.png") no-repeat center center; background-size: 22px; }
+	section.dramas button.prev span { overflow: hidden; position: absolute; clip: rect(0, 0, 0, 0); width: 1px; height: 1px; margin: -1px;  }
+	section.dramas button.next { right: 0; background: url("../images/btn_common_next_D.png") no-repeat center center; background-size: 22px; }
+	section.dramas button.next span { overflow: hidden; position: absolute; clip: rect(0, 0, 0, 0); width: 1px; height: 1px; margin: -1px; }
+
+
+/*++++section.original++++*/
+
+	section.original { overflow: hidden; position: relative; height: 700px; margin-bottom: 120px; }
+	section.original h2 { display: inline-block;  margin: 30px 0 15px 0; }
+	
+	
+	section.original div.infos_wrap { float: left; position: absolute; top: 100px; z-index: 10; width: 50%; height: 500px; background: #fff; }
+	section.original div.infos_wrap div.inner_wrap_half { position: relative; float: right; width: 30.7292vw; height: 100%; }
+	section.original div.infos_wrap div.info_wrap { display: none; position: absolute; }
+	section.original div.infos_wrap div.info_wrap:first-of-type { display: block; }
+
+	
+	section.original div.pagination { position: absolute; top: 8%; right: 10%; }
+	section.original div.pagination button { margin-left: 20px; }
+	section.original div.pagination button span { width: 0; height: 0; padding: 3px 10px; border-radius: 50%; background: #ccc; color: #6e6e6e; }
+	section.original div.pagination button.active > span { background: #085a8c; color: #fff; } 
+	section.original div.pagination button:hover > span { background: #085a8c; color: #fff;}
+
+	section.original div.info_wrap p.desc { margin: 20px 30px 30px 0; }	
+	section.original div.info_wrap p.genre { margin-top: 1.250em;} 
+	section.original div.info_wrap p.genre > span { padding: 0.125em 1.563em; border: 1px solid #130c0e; } 
+	section.original div.info_wrap p.genre > span:nth-of-type(1) { background: #130c0e; color: #fff; }
+	section.original div.info_wrap img { display:block; width: 155px; height: 155px; object-fit: cover; }
+	
+	section.original div.imgs_wrap { width: 100%; height: 100%; } 
+	section.original div.imgs_wrap div.img_wrap { width: 100%; height: 100%; display: none; }
+	section.original div.imgs_wrap div.img_wrap:first-of-type { display: block; }
+	section.original div.imgs_wrap div.img_wrap img { display: block; width: 100%; height: 100%; object-fit: cover; } 
+	
+	section.original a.btn_more { position: absolute; left: 0; bottom: -110px; margin: 0 30px 30px 0; }
+
+
+/*++++section.schedule++++*/
+	
+	section.schedule { overflow: hidden; margin-bottom: 120px; }
+	section.schedule h2 { float: left; }
+	section.schedule a.btn_more { float: right; }
+	section.schedule div.view_mask { clear: both; }
+	section.schedule ul > li { position: relative; display: inline-block; width: 33.3333%; } 
+	section.schedule ul > li > img { display: inline-block; width: 100%; object-fit: cover;}
+	section.schedule li > p.hours { position: absolute; left: 10px; top: 10px; color: #fff;}
+	section.schedule li > p.title { position: absolute; left: 10px; top: 30px; color: #fff; font-size: 1.125em; }
+	section.schedule li:nth-of-type(2) > p.hours { color: #130c0e; }
+	section.schedule li:nth-of-type(2) > p.title { color: #130c0e; }
+
+
+
+
+
+/*++++section.trailers*/
+	section.trailers { overflow: hidden; margin-bottom: 120px; }
+	section.trailers div.view_mask { overflow: hidden; position: relative; width: 1200px; margin: 0 auto; }
+	section.trailers div.view_mask ul { width: 166.66667%; }
+	section.trailers div.view_mask li { float: left; position: relative; width: 20%; padding: 0 10px; }
+	section.trailers div.view_mask li div.video_wrap { overflow: hidden; position: relative; width: 100%; height: 100%; }
+	section.trailers div.view_mask li div.video_wrap span { position:absolute; right:10px; bottom: 10px; font-size: 0.875em; padding: 1px 16px; border-radius: 5px; background: #085a8c; color: #fff; }
+	section.trailers div.view_mask li video { display: block; width: 100%; height: 100%; transition: transform 0.6s; }
+	section.trailers div.view_mask li:hover video { transform: scale(1.06); }
+	
+	section.trailers div.info_wrap p.desc { font-size: 1.125em; margin-bottom: 5px; } 
+	section.trailers div.info_wrap p.title { font-size: 1em; color: #085a8c; }	
+	section.trailers div.info_wrap p.count { display: inline-block; font-size: 0.875em; color: #666; }
+	section.trailers div.info_wrap p.count span:nth-of-type(1) { padding-right: 10px; }
+	section.trailers div.info_wrap p.count span:nth-of-type(2) { position: relative; padding-left: 10px; }
+	section.trailers div.info_wrap p.count span:nth-of-type(2)::before { content: ""; position: absolute; left: 0; top: 4px; width: 1px; height: 12px; background: #666; }
+
+
+	section.trailers button.dir_btns { position: absolute; top: 0; z-index: 10; width: 60px; height: 212px; }
+	section.trailers button.prev { left: 0; background: url("../images/btn_common_prev_D.png") no-repeat center center; background-size: 22px; }
+	section.trailers button.prev span { overflow: hidden; position: absolute; clip: rect(0, 0, 0, 0); width: 1px; height: 1px; margin: -1px; }
+
+	
+	section.trailers button.next { right: 0; background: url("../images/btn_common_next_D.png") no-repeat center center; background-size: 22px; }
+	section.trailers button.next span { overflow: hidden; position: absolute; clip: rect(0, 0, 0, 0); width: 1px; height: 1px; margin: -1px; }
+
+
+
+/*++++section.dapluspick++++*/
+
+
+	section.dapluspick { overflow: hidden; margin-bottom: 120px; }
+	section.dapluspick ul { display: flex; align-items: stretch; width: 100%; height: 600px; }
+	section.dapluspick ul > li { overflow: hidden; display: inline-flex; position: relative; flex: 1 1 33.33%; transition: flex 0.2s; }
+		
+	section.dapluspick ul > li:nth-child(1) { background: url("../images/img_index_da+s_01_D.jpg") no-repeat center center; background-size: cover; color: #fff; }
+	section.dapluspick ul > li:nth-child(2) { background: url("../images/img_index_da+s_02_D.jpg") no-repeat center center; background-size: cover; }
+	section.dapluspick ul > li:nth-child(3) { background: url("../images/img_index_da+s_03_D.jpg") no-repeat center center; background-size: cover; color: #fff; }
+	
+	section.dapluspick ul > li:hover { flex: 1 1 50%; }
+
+	section.dapluspick ul > li::before { content: ""; display: block; position: absolute; left: 0; top: 0; z-index: 2; width: 100%; height: 100%; transition: background 0.2s; } 
+		
+	section.dapluspick ul > li:nth-child(1)::before { background: #6a1b2d; opacity: 0.4; }
+	section.dapluspick ul > li:nth-child(2)::before { background: #8fbeb9; opacity: 0.4; }
+	section.dapluspick ul > li:nth-child(3)::before { background: #b4aacb; opacity: 0.4; } 
+
+	section.dapluspick ul:hover > li::before { background: black; opacity: 0.7; }
+	section.dapluspick ul > li:hover::before { opacity: 0; }
+
+	section.dapluspick img.title { position: absolute; right: 50%; top: 50%; z-index: 3; transform: translate(50%, -50%); transition: right 0.2s, transform 0.2s; filter: drop-shadow(0 0 0.1em #999); }
+	section.dapluspick div.info { position: absolute; right: 5%; top: 60%; z-index: 2; width: 45%; text-align: right; opacity: 0; transform: translateY(20%); }
+	section.dapluspick p.desc { margin-bottom: 1.2em; font-size: 1em; }
+	section.dapluspick a.btn_more { border-color: #fff; color: #fff; }
+	section.dapluspick li a._B { border: 1px solid #000; color: #000; }
+
+	section.dapluspick ul li:hover img.title { right: -7%; transform: translate(0, -50%); }
+	section.dapluspick ul li:hover div.info { opacity: 1; transform: translateY(0); transition: opacity 0.4s 0.1s, transform 0.4s 0.1s; }
+
+
+ /*++++section.event++++*/
+
+	section.event { overflow: hidden; margin-bottom: 120px; }
+	section.event ul { width: 1180px; height: 590px; }
+	section.event ul li { display: inline-block; }
+	section.event ul li > a { display: block; width: 100%; height: 100%; }
+	section.event button.dir_btns { display: none; }
+
+}
+
+
+
+
+
+/* ===========desktop(end)============== */

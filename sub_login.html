@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+        <head>
+            <meta charset="utf-8">
+            <title>Da+s</title>
+            <meta name="viewport" content="width=device-width">
+            <link rel="shortcut icon" href="images/favicon.png">
+            <link rel="stylesheet" href="css/reset.css" type="text/css">
+            <link rel="stylesheet" href="css/common.css" type="text/css">
+            <link rel="stylesheet" href="css/login.css" type="text/css">
+        
+            <!-- [if lt IE9]
+                <script src="js/html5shiv.js"></script>
+                <![endif] -->
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+                <script src="js/common.js"></script>
+                <script src="js/login.js"></script>
+            
+
+        
+        </head>
+
+        <body>      
+
+        <!--header start--> 
+        <header>
+            <div class="main_bg clearfix">
+                <div class="inner_wrap">
+                    <h1><a href="index.html"><img src="images/img_logo_common_D.png" alt="da+s logo"></a></h1>
+                    <button id="btn_menu" class="btn_menu"><span class="blind">menu button</span></button>
+                    <nav>
+                        <ul class="clearfix">
+                            <li>
+                                <button id="btn" class="btn"><span>About us</span></button>
+                                <ul class="sub">
+                                    <li><a href="sub_aboutus.html">*회사소개</a></li>
+                                </ul>
+                            </li><!--
+                            --><li>
+                                <button id="btn" class="btn"><span>Original</span></button>
+                                    <ul class="sub">
+                                        <li><a href="sub_original02.html">킹덤</a></li>
+                                        <li><a href="sub_original02.html">스위트홈</a></li>
+                                        <li><a href="sub_original02.html">보건교사 안은영</a></li>
+                                    </ul>
+                            </li><!--
+                            --><li>
+                                <button id="btn" class="btn"><span>Dramas</span></button>
+                                    <ul class="sub">
+                                        <li><a href="sub_terrestrial.html">지상파</a></li>
+                                        <li><a href="sub_cable.html">케이블</a></li>
+                                        <li><a href="sub_webdrama.html">웹</a></li>
+                                        <li><a href="sub_3rdw.html">제 3세계</a></li>
+                                        <li><a href="sub_etc.html">기타</a></li>
+                                    </ul>
+                            </li><!--
+                            --><li>
+                                <button id="btn" class="btn"><span>Da+s Pick</span></button>
+                                <ul class="sub">
+                                    <li><a href="sub_situation.html">*Situation</a></li>
+                                    <li><a href="sub_collection.html">Collection</a></li>
+                                    <li><a href="sub_dramatist.html">Dramatist</a></li>
+                                </ul>
+                            </li><!--
+                            --><li>
+                                <button id="btn" class="btn"><span>Info</span></button>
+                                <ul class="sub">
+                                    <li><a href="sub_schedule.html">*편성표</a></li>
+                                    <li><a href="sub_channel.html">채널번호안내</a></li>
+                                </ul>
+                            </li><!--
+                            --><li>
+                                <button id="btn" class="btn"><span>Community</span></button>
+                                <ul class="sub">
+                                    <li><a href="sub_qanda.html">*Q&A</a></li>
+                                    <li><a href="sub_notice.html">*공지사항</a></li>
+                                    <li><a href="sub_event.html">이벤트</a></li>
+                                </ul>
+                            </li><!--
+                            --><li>
+                                <button id="btn" class="btn"><span>Membership</span></button>
+                                <ul class="sub">
+                                    <li><a href="sub_login.html">*로그인</a></li>
+                                    <li><a href="sub_mypage.html">My page</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="sub_bg"></div>
+        </header>
+    <!--header end-->    
+
+
+    <!--login start-->
+    <section class="login">
+            <div class="login container">
+                <div class="login_tt">
+                    <p>로그인</p>
+                </div>
+                <div class="login_con">
+                    <form class="login_form login_mem">
+                        <div class="login_user member">
+                            <label for="userid">아이디</label>
+                            <input type="text" id="usdrid" class="text_control" placeholder="아이디" />
+                            <p class="arror_text">아이디를 입력하세요.</p>
+                        </div>
+                        <div class="login_user member">
+                            <label for="userpass">비밀번호</label>
+                            <input type="password" id="userpass" class="text_control" placeholder="비밀번호" />
+                            <p class="arror_text">비밀번호를 입력하세요.</p>
+                            <p class="login_link"><a href="#">회원가입</a><span>|</span>아이디, 비밀번호 찾기</p>
+                            <button class="login_btn">로 그 인</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    <!--회원 가입 창 모달창으로 뜨게 만들기-->
+        <section class="signup">
+            <div class="signup_container">
+                <div class="signup_tt">
+                    <p>회원가입</p>
+                </div>
+                <div class="signup_con">
+                    <div class="signup_form">
+                        <div class="signup_info signup_set">
+                            <label for="id">아이디</label>
+                            <input type="text" id="id" placeholder="아이디" />
+                            <p class="arror_text">아이디를 입력하세요.</p>
+                            <span class="same_ck">중복확인</span>
+                        </div>
+                        <div class="signup_info signup_set">
+                            <label for="pass">비밀번호</label>
+                            <input type="password" id="pass" placeholder="비밀번호" />
+                            <p class="arror_text">비밀번호를 입력하세요.</p>
+                        </div>
+                        <div class="signup_info signup_set">
+                            <label for="passok">비밀번호 확인</label>
+                            <input type="password" id="passok" placeholder="비밀번호 확인" />
+                            <p class="arror_text">일치하지 않습니다.</p>
+                        </div>
+                        <div class="signup_info signup_set">
+                            <label for="name">이름</label>
+                            <input type="text" id="name" placeholder="이름" />
+                            <p class="arror_text">이름을 입력하세요.</p>
+                        </div>
+                        <div class="signup_info signup_set yymmdd">
+                            <form action="" class="signup_set">
+                                <div class="year">
+                                    <label for="yy">연도</label>
+                                    <select title="연도" id="yy" required>
+                                        <option value="" disabled selected>연도</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2013">2013</option>
+                                        <option value="2012">2012</option>
+                                        <option value="2009">2011</option>
+                                    </select>
+                                </div>
+                                <div class="month">
+                                    <label for="mm">월</label>
+                                    <select title="월" id="mm" required>
+                                        <option value="" disabled selected>월</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                </div>
+                                <div class="day">
+                                    <label for="dd">일</label>
+                                    <select title="일" id="dd" required>
+                                        <option value="" disabled selected>일</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="signup_info_gender signup_set">
+                            <div class="gender">
+                                <form action="" method="post" class="signup_set">
+                                    <label for="m" class="men">남</label>
+                                    <input type="radio" id="m" name="gender" value="남" ng-model="myVar">
+                                    <label for="w" class="women">여</label>
+                                    <input type="radio" id="w" name="gender" value="여" ng-model="myVar">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="signup_info signup_set">
+                            <label for="number">전화번호</label>
+                            <input type="text" id="number" placeholder="전화번호" />
+                            <p class="arror_text">전화번호를 입력하세요.</p>
+                        </div>
+                        <div class="signup_info signup_set">
+                            <label for="email">이메일</label>
+                            <input type="email" id="email" placeholder="이메일" />
+                            <p class="arror_text">이메일을 입력하세요.</p>
+                        </div>
+                        <button class="signup_btn">회원가입</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+    <!--footer start-->
+    <footer>
+        <div class="inner_wrap">
+            <div class="footer_menu">
+                <ul>
+                    <li><a href="terms.html"><strong>이용약관</strong></a></li><!---->
+                    <li><a href="policy.html"><strong>개인정보 처리방침</strong></a></li><!---->
+                    <li><a href="protection.html">청소년보호정책</a></li><!---->
+                    <li><a href="legal_notice.html">법적고지</a></li><!---->
+                    <li><a href="rejection.html">이메일무단수집거부</a></li><!---->
+                    <li><a href="help.html">고객센터</a></li>
+                </ul>
+            </div>
+            <div class="footer_info">
+                <p>(주) 다플러스</p><!--
+                --><p>사업자등록번호: 000-00-0000000</p><!--
+                --><p>사업장: 경기도 용인시 기흥구 동백8로 90</p><!--
+                --><p>이메일주소: <a href="mailto:dutlsdkfm@gmail.com">customercare@daplus.com</a></p><!--
+                --><p>고객센터:<a href="tel:00000000000">+82 0000-0000</a></p>
+            </div>
+            <p class="copy"><strong>copyrightⓒDa+s Corporation All Rights Reserved.</strong></p>
+            <div class="logo_wrap">
+                    <img src="images/img_logo_common_D.png" alt="da+s logo">
+            </div>
+        </div>
+    </footer>
+    <!--footer end-->
+    </body>
+</html>

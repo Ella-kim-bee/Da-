@@ -1,0 +1,122 @@
+/* ===========mobile(start)============== */
+@media screen and (max-width: 767px) {
+
+    body { height: auto; }
+    section.visual { width: 100%; height: 150px; margin-top: 50px; }
+    section.visual img { display: block; width: 100%; height: 100%; object-fit: cover;}
+    section.qanda { width: 86.5vw; margin: 0 6.25vw; padding: 40px 0; }
+    section.qanda h2 { font-size: 22px; }
+    section.qanda div.container { margin: 0 auto; width: 100%; }
+    section.qanda div.acc-item { border-bottom: 1px solid #e5e5e5; }
+    section.qanda div.acc-item button[area-expanded='true'] { border-bottom: 1px solid #085a8c; }
+    section.qanda div.acc button { position: relative; display: block; text-align: left; width: 100%; padding: 5px 0; color: #085a8c; font-size: 14px; }
+    section.qanda div.acc button:hover, div.acc button:focus { cursor: pointer; color: #085a8c; }
+    section.qanda div.acc button:hover::after, div.acc button:focus::after { cursor: pointer; color: #085a8c; border: 1px solid #085a8c; }
+    section.qanda span.title { display: inline-block; width: 88%; font-size: 13px; font-weight: bold; text-overflow: ellipsis; overflow:hidden; white-space: nowrap; }
+    section.qanda div.acc button span.icon { display: inline-block; position: absolute; top: 3px; right: 0; width: 22px; height: 22px; border: 1px solid; border-radius: 22px; }
+    section.qanda div.acc button span.icon::before { display: block; position: absolute; content: ''; top: 9px; left: 5px; width: 10px; height: 2px; background: #085a8c; }
+    section.qanda div.acc button span.icon::after { display: block; position: absolute; content: ''; top: 5px; left: 9px; width: 2px; height: 10px; background: #085a8c; }
+    section.qanda div.acc button[area-expanded='true'] { color: #085a8c; }
+    section.qanda div.acc button[area-expanded='true'] span.icon::after { width: 0; }
+    section.qanda div.acc button[area-expanded='true'] + div.acc-content { opacity: 1; max-height: 16em; transition: all 0.2s linear; will-change: opacity, max-height; }
+    section.qanda div.acc div.acc-content { padding: 0 10px; background: #085a8c; color: #fff; opacity: 0; max-height: 0; overflow: hidden; transition: opacity 200ms linear, max-height 200ms linear; will-change: opacity, max-height; }
+    section.qanda div.acc div.acc-content p { font-size: 0.83em; margin: 2em 0; }
+    
+
+}
+
+/* ===========mobile(end)============== */
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!      Da+s      !!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+
+
+
+
+/* ===========tablet(start)============== */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+body { height: auto; }
+
+section.visual { width: 100%; height: 150px; margin-top: 80px; }
+section.visual img { display: block; width: 100%; height: 100%; object-fit: cover;}
+section.qanda {  width: 93.4896vw; height: calc(100vh - 418px); margin: 0 3.2552vw; }
+section.qanda h2 { font-size: 20px; padding-top: 40px; }
+section.qanda div.container { margin: 0 auto; width: 100%; }
+section.qanda div.acc-item { border-bottom: 1px solid #e5e5e5; }
+section.qanda div.acc-item button[area-expanded='true'] { border-bottom: 1px solid #085a8c; }
+section.qanda div.acc button { position: relative; display: block; text-align: left; width: 100%; padding: 10px 0; color: #085a8c; font-size: 14px; }
+section.qanda div.acc button:hover, div.acc button:focus { cursor: pointer; color: #085a8c; }
+section.qanda div.acc button:hover::after, div.acc button:focus::after { cursor: pointer; color: #085a8c; border: 1px solid #085a8c; }
+section.qanda span.title { padding: 1em 1.5em 1em 0; font-size: 15px; font-weight: bold; }
+section.qanda div.acc button span.icon { display: inline-block; position: absolute; top: 11px; right: 0; width: 22px; height: 22px; border: 1px solid; border-radius: 22px; }
+section.qanda div.acc button span.icon::before { display: block; position: absolute; content: ''; top: 9px; left: 5px; width: 10px; height: 2px; background: #085a8c; }
+section.qanda div.acc button span.icon::after { display: block; position: absolute; content: ''; top: 5px; left: 9px; width: 2px; height: 10px; background: #085a8c; }
+section.qanda div.acc button[area-expanded='true'] { color: #085a8c; }
+section.qanda div.acc button[area-expanded='true'] span.icon::after { width: 0; }
+section.qanda div.acc button[area-expanded='true'] + div.acc-content { opacity: 1; max-height: 16em; transition: all 200ms linear; will-change: opacity, max-height; }
+section.qanda div.acc div.acc-content { padding-left: 10px; background: #085a8c; color: #fff; opacity: 0; max-height: 0; overflow: hidden; transition: opacity 200ms linear, max-height 200ms linear; will-change: opacity, max-height; }
+section.qanda div.acc div.acc-content p { font-size: 0.875em; margin: 2em 0; }
+
+
+
+
+}
+
+
+/* ===========tablet(end)============== */
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!      Da+s      !!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+/* ===========desktop(start)============== */
+@media screen and (min-width: 1025px) {
+
+body { height: auto; }
+
+section.visual { width: 100%; height: 15vh; margin-top: 120px; }
+section.visual img { display: block; width: 100%; height: 100%; object-fit: cover; }
+section.qanda { width: 70%; margin: 0 auto; padding-bottom: 100px; }
+section.qanda h2 { padding-top: 40px; font-size: 22px; }
+section.qanda div.container { margin: 0 auto; width: 100%; }
+section.qanda div.acc-item { border-bottom: 1px solid #e5e5e5; }
+section.qanda div.acc-item button[area-expanded='true'] { border-bottom: 1px solid #085a8c; }
+section.qanda div.acc button { position: relative; display: block; text-align: left; width: 100%; padding: 10px 0; color: #085a8c; font-size: 14px; }
+section.qanda div.acc button:hover, div.acc button:focus { cursor: pointer; color: #085a8c; }
+section.qanda div.acc button:hover::after, div.acc button:focus::after { cursor: pointer; color: #085a8c; border: 1px solid #085a8c; }
+section.qanda span.title { padding: 1em 1.5em 1em 0; font-size: 15px; font-weight: bold; }
+section.qanda div.acc button span.icon { display: inline-block; position: absolute; top: 11px; right: 0; width: 22px; height: 22px; border: 1px solid; border-radius: 22px; }
+section.qanda div.acc button span.icon::before { display: block; position: absolute; content: ''; top: 9px; left: 5px; width: 10px; height: 2px; background: #085a8c; }
+section.qanda div.acc button span.icon::after { display: block; position: absolute; content: ''; top: 5px; left: 9px; width: 2px; height: 10px; background: #085a8c; }
+section.qanda div.acc button[area-expanded='true'] { color: #085a8c; }
+section.qanda div.acc button[area-expanded='true'] span.icon::after { width: 0; }
+section.qanda div.acc button[area-expanded='true'] + div.acc-content { padding-left: 10px; background: #085a8c; color: #fff; opacity: 1; max-height: 16em; transition: all 200ms linear; will-change: opacity, max-height; }
+section.qanda div.acc div.acc-content { opacity: 0; max-height: 0; overflow: hidden; transition: opacity 200ms linear, max-height 200ms linear; will-change: opacity, max-height; }
+section.qanda div.acc div.acc-content p { font-size: 0.875em; margin: 2em 0; }
+
+
+}
+/* ===========desktop(end)============== */

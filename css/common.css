@@ -1,0 +1,304 @@
+/*+++++++++++++++++++++++ media query +++++++++++++++++++++++*/
+/* index.html */
+
+@charset "utf-8";
+		/* noto-sans-kr-regular - latin_korean */
+			@font-face {
+			  font-family: 'NotoSansKR-Regular';
+			  src: url('../fonts/noto-sans-kr-v21-latin_korean-regular.eot'); /* IE9 Compat Modes */
+			  src: local('NotoSansKR-Regular'), local('NotoSansKR Regular'),
+				   url('../fonts/noto-sans-kr-v21-latin_korean-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+				   url('../fonts/noto-sans-kr-v21-latin_korean-regular.woff2') format('woff2'), /* Super Modern Browsers */
+				   url('../fonts/noto-sans-kr-v21-latin_korean-regular.woff') format('woff'), /* Modern Browsers */
+				   url('../fonts/noto-sans-kr-v21-latin_korean-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+				   url('../fonts/noto-sans-kr-v21-latin_korean-regular.svg#NotoSansKR') format('svg'); /* Legacy iOS */
+			}
+
+		/* noto-sans-kr-medium - latin_korean */
+			@font-face {
+			  font-family: 'NotoSansKR-Medium';
+			  src: url('../fonts/noto-sans-kr-v21-latin_korean-500.eot'); /* IE9 Compat Modes */
+			  src: local('NotoSansKR-Medium'), local('NotoSansKR Medium'),
+				   url('../fonts/noto-sans-kr-v21-latin_korean-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+				   url('../fonts/noto-sans-kr-v21-latin_korean-500.woff2') format('woff2'), /* Super Modern Browsers */
+				   url('../fonts/noto-sans-kr-v21-latin_korean-500.woff') format('woff'), /* Modern Browsers */
+				   url('../fonts/noto-sans-kr-v21-latin_korean-500.ttf') format('truetype'), /* Safari, Android, iOS */
+				   url('../fonts/noto-sans-kr-v21-latin_korean-500.svg#NotoSansKR') format('svg'); /* Legacy iOS */
+			}
+			
+		/* noto-sans-kr-700 - latin_korean */
+			@font-face {
+			  font-family: 'NotoSansKR-Bold';
+			  src: url('../fonts/noto-sans-kr-v21-latin_korean-700.eot'); /* IE9 Compat Modes */
+			  src: local('NotoSansKR-Bold'), local('NotoSansKR Bold'),
+				   url('../fonts/noto-sans-kr-v21-latin_korean-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+				   url('../fonts/noto-sans-kr-v21-latin_korean-700.woff2') format('woff2'), /* Super Modern Browsers */
+				   url('../fonts/noto-sans-kr-v21-latin_korean-700.woff') format('woff'), /* Modern Browsers */
+				   url('../fonts/noto-sans-kr-v21-latin_korean-700.ttf') format('truetype'), /* Safari, Android, iOS */
+				   url('../fonts/noto-sans-kr-v21-latin_korean-700.svg#NotoSansKR') format('svg'); /* Legacy iOS */
+			}
+
+
+
+/*----------------------------------- FONTFACE -----------------------------------------*/
+
+
+
+body { font-family: "NotoSansKR-Regular"; color: #333; }
+div.inner_wrap { width: 100%; max-width: 1180px; margin: 0 auto; }
+div.inner_wrap_02 { position: relative; width: 100%; max-width: 1320px; margin: 0 auto; }
+h2 { margin-bottom: 30px; font-family: "NotoSansKR-Medium"; font-size: 1.750em }
+div.rel { position: relative; }
+a.btn_more { padding: 0.5rem 2.5rem; border: 1px solid black; font-size: 1em; }
+
+
+/*starbox common*/
+.star_box { display: inline-block; width: 25px; height: 25px; vertical-align: text-top; clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+.star_box > div.inner_color { display: block; width: 100%; height: 100%; background: #f8b551; }
+.star_box:nth-last-of-type(1) > div.inner_color { display: block; height: 100%; background: #f8b551; }
+.star_box:nth-last-of-type(1) > div.inner_color[class ~= _0] { width: 0%; }
+.star_box:nth-last-of-type(1) > div.inner_color[class ~= _1] { width: 10%; }
+.star_box:nth-last-of-type(1) > div.inner_color[class ~= _2] { width: 20%; }
+.star_box:nth-last-of-type(1) > div.inner_color[class ~= _3] { width: 30%; }
+.star_box:nth-last-of-type(1) > div.inner_color[class ~= _4] { width: 40%; }
+.star_box:nth-last-of-type(1) > div.inner_color[class ~= _5] { width: 50%; }
+.star_box:nth-last-of-type(1) > div.inner_color[class ~= _6] { width: 60%; }
+.star_box:nth-last-of-type(1) > div.inner_color[class ~= _7] { width: 70%; }
+.star_box:nth-last-of-type(1) > div.inner_color[class ~= _8] { width: 80%; }
+.star_box:nth-last-of-type(1) > div.inner_color[class ~= _9] { width: 90%; }
+.star_box:nth-last-of-type(1) > div.inner_color[class ~= _10] { width: 100%; }
+
+
+
+/* ===========mobile(start)============== */
+@media screen and (max-width: 767px) {
+
+	div.inner_wrap { margin: 0 6.25vw; }
+	h2 { font-size: 1.250em; margin-bottom: 20px; }
+	.dir_btns { position: absolute; display: inline-block; height: 27px; vertical-align: middle; margin-top:10px; }
+	.dir_btns span { display: inline-block; font-size: 0.875em; } 
+	.dir_btns[class ~= "prev"] { left: 0.313em; }
+	.dir_btns[class ~= "next"] { right: 0.313em; }
+	.dir_btns[class ~= "prev"]::before { content:""; display: inline-block; width: 25px; height: 25px; background: url("../images/btn_common_prev_T.png") no-repeat; background-size: cover; margin-right: 10px; vertical-align: middle;}
+	.dir_btns[class ~= "next"]::after { content:""; display: inline-block; width: 25px; height: 25px; background: url("../images/btn_common_next_T.png") no-repeat; background-size: cover;  margin-left:10px; vertical-align: middle; }
+	a.btn_more {padding : 0.250em 1.563em; border: 1px solid black; font-size: 0.83em; }
+
+
+
+	header { overflow: hidden; position: fixed; left: 0; top: 0; z-index: 90; width: 100%; height: 50px; background: #f1f2f2; }
+
+	/*++++LOGO START++++*/
+	header h1 { float: left; position: absolute; z-index:110; width: 49px; height: 24px; margin-top : 0.938em; } 
+	header h1 > a { display: block; width: 100%; height: 100%; }
+	header h1 > a > img { width: 100%; height: 100%; object-fit: cover; }
+	header button.btn_menu { display: block; position: fixed; right: 6.25vw;; top: 15px; z-index: 110; width: 25px; height: 20px; background: url("../images/btn_hamburger_T.png") no-repeat; background-size: cover;}
+	header.on button.btn_menu { background: url("../images/btn_hamburger_hover_T.png") no-repeat center center; background-size: 85%;}
+
+	/*++++LOGO END++++*/
+	
+	/*++++HEADER NAV START++++*/
+	header nav { display: block; position: fixed; left: 100%; top:0; z-index: 105; width: 100vw; height: 100vh; padding: 50px 0 0 0; font-size: 1em; background: #eee; transform: translateX(0%); transition: transform 0.2s; }
+	header.on nav { transform: translateX(-100%); }
+	header nav > ul { height: 100%; overflow-y: scroll; }
+	header nav > ul > li { overflow-x: hidden; }
+
+	header nav > ul > li > button { display: block; position: relative; width: 100%; height: 2.5em; padding-left: 6.25vw; font-size: 1em; color: #333; line-height: 2.5em; } 
+	/* header nav > ul > li > button::after { content: "+"; display: block; position: absolute; right:0; top: 50%; font-size: 1.125em; transform: translateY(-50%); transition: transform 0.2s; } */
+	header nav > ul > li > button::after { content:""; display:block; position:absolute; right:0; top: 50%; width: 25px; height: 25px; margin-right: 6.25vw; background: url("../images/btn_sub.png") no-repeat; background-size: 90%; transform: translateY(-50%); transition: transform 0.2s;} 
+	header nav > ul > li.open_close > button::after { margin-right: 6.25vw; transform: translateY(-50%) rotate(45deg); }
+
+	header nav > ul > li > ul.sub { overflow: hidden; height: 0; transition: height 0.5s; padding-left: 12.5vw; background: #085a8c; }
+	header nav > ul > li:nth-child(1)[class ~= "open_close"] > ul.sub { height: 40px; }
+	header nav > ul > li:nth-child(2)[class ~= "open_close"] > ul.sub { height: 120px; }
+	header nav > ul > li:nth-child(3)[class ~= "open_close"] > ul.sub { height: 200px; }
+	header nav > ul > li:nth-child(4)[class ~= "open_close"] > ul.sub { height: 120px; }
+	header nav > ul > li:nth-child(5)[class ~= "open_close"] > ul.sub { height: 80px; }
+	header nav > ul > li:nth-child(6)[class ~= "open_close"] > ul.sub { height: 120px; }
+	header nav > ul > li:nth-child(7)[class ~= "open_close"] > ul.sub { height: 80px; }
+	header ul.sub > li > a { display: block; width:100%; height: 40px; font-size: 0.875em; line-height: 2.6; color: #fff; }
+
+	
+	/*++++HEADER NAV END++++*/
+	
+	/*++++FOOTER START++++*/
+
+	footer { overflow: hidden; background: #f1f2f2; }
+	footer div.inner_wrap { margin: 0 auto; }
+	footer div.footer_menu { padding-top: 20px; }
+	footer div.footer_menu ul { display: inline-block; text-align: center; }
+	footer div.footer_menu li { display: inline-block; width: 40%; font-size: 0.875rem; }
+	
+	footer div.footer_info { margin: 20px auto; text-align: center;}
+	footer div.footer_info p { font-size: 0.75rem; }
+	footer p.copy { margin: 10px auto; text-align: center; font-size: 0.75rem; color: #999;}
+	
+	footer div.logo_wrap { margin: 20px auto; width: 50px; height: 25px; }
+	footer div.logo_wrap img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+	/*++++FOOTER END++++*/
+
+
+}
+
+/* ===========mobile(end)============== */
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!      Da+s      !!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+
+
+
+
+/* ===========tablet(start)============== */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+	
+	/*button_dir_btns (prev, next)*/
+	.dir_btns { position: absolute; display: inline-block; height: 30px; vertical-align: middle; margin-top:10px; }
+	.dir_btns span { display: inline-block; } 
+	.dir_btns[class ~= "prev"] { left: 0.438em; }
+	.dir_btns[class ~= "next"] { right: 0.438em; }
+	.dir_btns[class ~= "prev"]::before { content:""; display: inline-block; width: 30px; height: 30px; background: url("../images/btn_common_prev_T.png") no-repeat; background-size: cover; margin-right: 10px; vertical-align: middle;}
+	.dir_btns[class ~= "next"]::after { content:""; display: inline-block; width: 30px; height: 30px; background: url("../images/btn_common_next_T.png") no-repeat; background-size: cover;  margin-left: 10px; vertical-align: middle; }
+	
+	/*more button*/
+	a.btn_more { padding: 0.375em 2em; border: 1px solid black; font-size: 1em;}
+
+
+	/*++++HEADER START++++*/
+	header { overflow: hidden; position: fixed; left: 0; top: 0; z-index: 90; width: 100%; height: 80px; background: #f1f2f2; }
+	header div.main_bg { width: 100%; height: 100%; }
+
+	/*++++LOGO START++++*/
+	header h1 { float: left; width: 57px; height: 27px; margin: 3.255208vw; } 
+	header h1 > a { display: block; width: 100%; height: 100%; }
+	header h1 > a > img { width: 100%; height: 100%; object-fit: cover; }
+	header button.btn_menu { display: block; position: fixed; right: 3.255208vw; top: 24px; z-index: 110; width: 30px; height: 30px; background: url("../images/btn_hamburger_T.png") no-repeat; background-size: cover;}
+	header.on button.btn_menu { background: url("../images/btn_hamburger_hover_T.png") no-repeat; background-size: 100%;}
+	/*++++LOGO END++++*/
+	
+	/*++++HEADER NAV START++++*/
+	header nav { display: block; position: fixed; left: 100%; top:0; z-index: 105; width: 66vw; height: 100vh; padding: 81px 0 0 0; font-size: 1em; background: #eee; transform: translateX(0%); transition: transform 0.2s; }
+	header.on nav { transform: translateX(-100%); }
+	header nav > ul { height: 100%; overflow-y: scroll; }
+	header nav > ul > li { overflow-x: hidden; }
+
+	header nav > ul > li > button { display: block; position: relative; width: 100%; height: 2.5em; padding-left: 3.90625vw; font-size: 1.25em; color: #333; line-height: 2.5em; } 
+	/*플러스 파일 나오지 않을 경우: header nav > ul > li > button::after { content: "+"; display: block; position: absolute; right:0; top: 50%; font-size: 1.125em; transform: translateY(-50%); transition: transform 0.2s; } */
+	header nav > ul > li > button::after { content:""; display:block; position:absolute; right:0; top: 50%; width: 24px; height: 25px; margin-right: 3.90625vw; background: url("../images/btn_sub.png") no-repeat; background-size: 90%; transform: translateY(-50%); transition: transform 0.2s;} 
+	header nav > ul > li.open_close > button::after { margin-right: 3.90625vw; transform: translateY(-50%) rotate(45deg); }
+
+	header nav > ul > li > ul.sub { overflow: hidden; height: 0; transition: height 0.5s; padding-left: 5.8125vw; font-size: 1em; background: #085a8c; }
+	header nav > ul > li:nth-child(1)[class ~= "open_close"] > ul.sub { height: 40px; }
+	header nav > ul > li:nth-child(2)[class ~= "open_close"] > ul.sub { height: 120px; }
+	header nav > ul > li:nth-child(3)[class ~= "open_close"] > ul.sub { height: 200px; }
+	header nav > ul > li:nth-child(4)[class ~= "open_close"] > ul.sub { height: 120px; }
+	header nav > ul > li:nth-child(5)[class ~= "open_close"] > ul.sub { height: 80px; }
+	header nav > ul > li:nth-child(6)[class ~= "open_close"] > ul.sub { height: 120px; }
+	header nav > ul > li:nth-child(7)[class ~= "open_close"] > ul.sub { height: 80px; }
+	header ul.sub > li > a { display: block; height: 2.5em; font-size: 1rem; line-height: 2.5; color: #fff; }
+	/*++++HEADER END++++*/
+	
+
+	/*++++FOOTER START++++*/
+	footer { overflow: hidden; background: #f1f2f2; }
+	
+	footer div.footer_menu { width: 100%; margin: 0 auto; padding-top: 10px; margin-bottom: 10px; }
+	footer div.footer_menu ul { display: inline-block; text-align: center; width: 100%; }
+	footer div.footer_menu li { display: inline-block; padding: 0 10px; font-size: 0.813rem; }
+	footer div.footer_menu li:last-child { padding-right: 0; }
+	
+	footer div.footer_info { width: 580px; margin: 0 auto; text-align: center; }
+	footer div.footer_info p { display: inline-block; font-size: 0.75rem; padding-right: 10px; }
+	footer div.footer_info p:last-of-type { padding-right: 0; }
+	footer p.copy { margin: 0 auto; text-align: center; font-size: 0.75rem; color: #999;}
+	
+	footer div.logo_wrap { margin: 26px auto; width: 57px; height: 27px; }
+	footer div.logo_wrap img { display: block; width: 100%; height: 100%; object-fit: cover; }
+	/*++++FOOTER END++++*/
+
+
+
+}
+
+
+/* ===========tablet(end)============== */
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!      Da+s      !!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+/* ===========desktop(start)============== */
+@media screen and (min-width: 1025px) {
+
+header { overflow: hidden; position: fixed; left: 0; top: 0; z-index: 90; width: 100%; height: 120px; transition: height 0.3s; }
+header:hover { width: 100%; height: 387px; }
+header div.inner_wrap { position: relative; z-index:1; }
+
+/*++++LOGO START++++*/
+header h1 { width: 90px; margin: 0 auto; padding-top: 15px; } 
+header h1 > a { display: block; width: 100%; height: 100%; }
+header h1 > a > img { width: 100%; height: 100%; object-fit: cover; }
+/*++++LOGO END++++*/
+
+/*++++HEADER NAV START++++*/
+header div.main_bg { position: relative; z-index: 2; width: 100%; height: 120px; background: #f1f2f2; }
+header div.nav_bg { display: none; width: 100%; }
+header nav { text-align: center; overflow: hidden; width: 100%; height: 35px; transition: height 0.3s; }
+header:hover nav { width: 100%; height: 328px; }
+header nav > ul { display: inline-block; }
+header nav > ul > li { float: left; text-align: center; }
+header nav > ul > li > button.btn { display: inline-block; position: relative; padding: 0 40px 0 40px; font-size: "NotoSans-Medium"; font-size: 1.150em; color: #333; }
+header nav > ul > li:hover > button.btn::after { content:"+"; position: absolute; top: -10px; right: 25x; font-size: 1.25em;  color: #085a8c; }
+header nav > ul > li:hover > button.btn { font-weight: bold; }
+header nav > ul > li > ul { padding: 15px 0; }
+header nav > ul > li > ul > li > a { display: block; width: 100%; padding: 7px 0; font-size: 1em; color: #333; }
+header nav > ul > li > ul > li:hover > a { color:#085a8c;}
+header div.sub_bg {  overflow: hidden; position: absolute; top: 0; z-index: 0; width: 100%; height: 120px; background: rgba(241, 242, 242, 0.9); transition: 0.3s;}
+header:hover > div.sub_bg { width: 100%; height: 328px; }
+
+
+/*++++HEADER NAV END++++*/
+
+/*++++FOOTER START++++*/
+footer { overflow: hidden; background: #f1f2f2; height: 250px; }
+
+footer div.footer_menu { width: 80%; margin: 0 auto; padding-top: 30px; }
+footer div.footer_menu ul { display: inline-block; text-align: center; width: 100%; }
+footer div.footer_menu li { display: inline-block; padding-right: 40px; }
+footer div.footer_menu li:last-child { padding-right: 0; }
+
+footer div.footer_info { width: 580px; margin: 10px auto; text-align: center;}
+footer div.footer_info p { display: inline-block;  font-size: 0.875em; padding-right: 10px; }
+footer div.footer_info p:last-of-type { padding-right: 0; }
+footer p.copy { margin: 10px auto; text-align: center; font-size: 0.875em; color: #999;}
+
+footer div.logo_wrap { margin: 26px auto; width: 104px; height: 49px; }
+footer div.logo_wrap img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+/*++++FOOTER END++++*/
+
+
+}
+/* ===========desktop(end)============== */

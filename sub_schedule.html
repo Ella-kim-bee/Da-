@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>Da+s</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" href="images/favicon.png">
+	<link rel="stylesheet" href="css/reset.css" type="text/css">
+	<link rel="stylesheet" href="css/common.css" type="text/css">
+	<link rel="stylesheet" href="css/schedule.css" type="text/css">
+	<!-- [if lt IE9]
+		<script src="js/html5shiv.js"></script>
+		<![endif] -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="js/common.js" type="text/script"></script>
+	<script type="text/javascript">
+		window.onload = function(){
+
+		(function cur_program(){
+			let arr_prog_time = [];
+			let $lists = document.querySelectorAll("#time_table ul li");
+			let $prog_each_time = document.querySelectorAll("#time_table ul li p.time");
+			let cur_num;
+
+			for(var i = 0; i < $prog_each_time.length - 1; i++){
+				var value = $prog_each_time[i].innerText;
+				value = value.replace(":", "");
+				arr_prog_time[i] = value;
+			}
+
+			let $date = new Date();
+			let _hours = $date.getHours() < 10 ? "0"+ $date.getHours() : $date.getHours();
+			let _minutes = $date.getMinutes() < 10 ? "0"+ $date.getMinutes() : $date.getMinutes();
+			let cur_time = String(_hours) + String(_minutes);
+
+			for(let i = 0; i < $prog_each_time.length - 1; i++){
+				if(cur_time >= arr_prog_time[i] && cur_time < arr_prog_time[i + 1]){
+					cur_num = i;
+					for(let k = 0; k < $lists.length - 1; k++){
+						$lists[k].classList.remove("active");
+					}
+					$lists[cur_num].classList.add("active");
+					break;
+				}
+			}
+
+		})();
+
+	}
+
+
+	
+	</script>
+
+
+
+</head>
+	
+<body>
+
+<!--header start-->
+<header>
+	<div class="main_bg clearfix">
+		<div class="inner_wrap">
+			<h1><a href="index.html"><img src="images/img_logo_common_D.png" alt="da+s logo"></a></h1>
+			<button id="btn_menu" class="btn_menu"><span class="blind">menu button</span></button>
+			<nav>
+				<ul class="clearfix">
+					<li>
+						<button id="btn" class="btn"><span>About us</span></button>
+						<ul class="sub">
+							<li><a href="sub_aboutus.html">*회사소개</a></li>
+						</ul>
+					</li><!--
+					--><li>
+						<button id="btn" class="btn"><span>Original</span></button>
+							<ul class="sub">
+								<li><a href="sub_original02.html">킹덤</a></li>
+								<li><a href="sub_original02.html">스위트홈</a></li>
+								<li><a href="sub_original02.html">보건교사 안은영</a></li>
+							</ul>
+					</li><!--
+					--><li>
+						<button id="btn" class="btn"><span>Dramas</span></button>
+							<ul class="sub">
+								<li><a href="sub_terrestrial.html">지상파</a></li>
+								<li><a href="sub_cable.html">케이블</a></li>
+								<li><a href="sub_webdrama.html">웹</a></li>
+								<li><a href="sub_3rdw.html">제 3세계</a></li>
+								<li><a href="sub_etc.html">기타</a></li>
+							</ul>
+					</li><!--
+					--><li>
+						<button id="btn" class="btn"><span>Da+s Pick</span></button>
+						<ul class="sub">
+							<li><a href="sub_situation.html">*Situation</a></li>
+							<li><a href="sub_collection.html">Collection</a></li>
+							<li><a href="sub_dramatist.html">Dramatist</a></li>
+						</ul>
+					</li><!--
+					--><li>
+						<button id="btn" class="btn"><span>Info</span></button>
+						<ul class="sub">
+							<li><a href="sub_schedule.html">*편성표</a></li>
+							<li><a href="sub_channel.html">채널번호안내</a></li>
+						</ul>
+					</li><!--
+					--><li>
+						<button id="btn" class="btn"><span>Community</span></button>
+						<ul class="sub">
+							<li><a href="sub_qanda.html">*Q&A</a></li>
+							<li><a href="sub_notice.html">*공지사항</a></li>
+							<li><a href="sub_event.html">이벤트</a></li>
+						</ul>
+					</li><!--
+					--><li>
+						<button id="btn" class="btn"><span>Membership</span></button>
+						<ul class="sub">
+							<li><a href="sub_login.html">*로그인</a></li>
+							<li><a href="sub_mypage.html">My page</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<div class="sub_bg"></div>
+</header>
+<!--header end-->
+
+
+
+<!--visual start-->
+		<section class="visual">
+			<h2 class="blind">VISUAL</h2>
+			<img src="images/img_schedule_visual.jpg" alt="은하수" />
+			<div class="txt_wrap">
+				<span class="pre_title">
+					<span>세상 모든 드라마는,</span>
+					<span>취향 존중 드라마 채널</span>
+				</span>
+				<img src="images/img_logo_common_W.png" alt="da+s logo">				
+			</div>
+		</section>
+<!--visual end-->
+
+<!--schedule start-->
+		<section class="schedule">
+			<div class="inner_wrap">
+				<h2 class="blind">schedule</h2>
+				<div class="week">
+					<span class="today">
+						<span>2021. 11. 15</span>
+						<span>월요일</span>
+					</span>				
+					<a href="channel.html">채널번호안내</a>	
+				</div>
+				<ul>
+					<li class="active"><button>11.15<br>월</button></li><!--
+				  --><li><button>11.16<br>화</button></li><!--
+				  --><li><button>11.17<br>수</button></li><!--
+				  --><li><button>11.18<br>목</button></li><!--
+				  --><li><button>11.19<br>금</button></li><!--
+				  --><li><button>11.20<br>토</button></li><!--
+				  --><li><button>11.21<br>일</button></li>						
+				</ul>
+				<button class="dir_btns prev"><span class="blind">PREV</span></button>
+				<button class="dir_btns next"><span class="blind">NEXT</span></button>
+			</div>
+			<div id="time_table" class="time_table">
+				<ul>
+					<li>
+						<div class="rel_wrap">
+							<div class="info_wrap">
+								<p class="time"><span class="hour">00</span>:<span class="min">30</span></p><!--
+							  --><span class="title">킹덤 5화</span><!--
+							  --><p class="pro_infos">
+									<span class="pro_info _19"><span>19세이상</span></span>
+									<span class="pro_info _rep"><span>재방송</span></span>
+									<span class="pro_info _uhd"><span>UHD방송</span></span>
+									<span class="pro_info _sub"><span>자막방송</span></span>
+								</p>
+							</div>
+							<a class="img_wrap" href="drama.html">
+								<img src="images/img_schedule_table_01.jpg" alt="킹덤 포스터" />
+								<span class="btn_play"><span class="blind">보러가기</span></span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="rel_wrap">
+							<div class="info_wrap">
+								<p class="time"><span class="hour">02</span>:<span class="min">40</span></p><!--
+							  --><span class="title">힐 하우스의 유령 9화</span><!--
+							  --><p class="pro_infos">
+									<span class="pro_info _19"><span>19세이상</span></span>
+									<span class="pro_info _rep"><span>재방송</span></span>
+									<span class="pro_info _uhd"><span>UHD방송</span></span>
+									<span class="pro_info _sub"><span>자막방송</span></span>
+								</p>
+							</div>
+							<a class="img_wrap" href="drama.html">
+								<img src="images/img_schedule_table_02.jpg" alt="힐 하우스의 유령 포스터" />
+								<span class="btn_play"><span class="blind">보러가기</span></span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="rel_wrap">
+							<div class="info_wrap">
+								<p class="time"><span class="hour">04</span>:<span class="min">20</span></p><!--
+							  --><span class="title">런 온 14화</span><!--
+							  --><p class="pro_infos">
+									<span class="pro_info _12"><span>12세이상</span></span>
+									<span class="pro_info _rep"><span>재방송</span></span>
+									<span class="pro_info _uhd"><span>UHD방송</span></span>
+									<span class="pro_info _exp"><span>화면해설방송</span></span>
+								</p>
+							</div>
+							<a class="img_wrap" href="drama.html">
+								<img src="images/img_schedule_table_03.jpg" alt="런 온 포스터" />
+								<span class="btn_play"><span class="blind">보러가기</span></span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="rel_wrap">
+							<div class="info_wrap">
+								<p class="time"><span class="hour">05</span>:<span class="min">30</span></p><!--
+							  --><span class="title">보건교사 안은영 1화</span><!--
+							  --><p class="pro_infos">
+									<span class="pro_info _15"><span>15세이상</span></span>
+									<span class="pro_info _rep"><span>재방송</span></span>
+									<span class="pro_info _uhd"><span>UHD방송</span></span>
+									<span class="pro_info _exp"><span>화면해설방송</span></span>
+								</p>
+							</div>
+							<a class="img_wrap" href="drama.html">
+								<img src="images/img_schedule_table_04.jpg" alt="보건교사 안은영 포스터" />
+								<span class="btn_play"><span class="blind">보러가기</span></span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="rel_wrap">
+							<div class="info_wrap">
+								<p class="time"><span class="hour">07</span>:<span class="min">00</span></p><!--
+							  --><span class="title">펜트하우스 15화</span><!--
+							  --><p class="pro_infos">
+									<span class="pro_info _15"><span>15세이상</span></span>
+									<span class="pro_info _rep"><span>재방송</span></span>
+									<span class="pro_info _exp"><span>화면해설방송</span></span>
+								</p>
+							</div>
+							<a class="img_wrap" href="drama.html">
+								<img src="images/img_schedule_table_05.jpg" alt="펜트하우스 포스터" />
+								<span class="btn_play"><span class="blind">보러가기</span></span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="rel_wrap">
+							<div class="info_wrap">
+								<p class="time"><span class="hour">09</span>:<span class="min">00</span></p><!--
+							  --><span class="title">갯마을 차차차 11화</span><!--
+							  --><p class="pro_infos">
+									<span class="pro_info _12"><span>12세이상</span></span>
+									<span class="pro_info _air"><span>본방송</span></span>
+									<span class="pro_info _exp"><span>화면해설방송</span></span>
+								</p>
+							</div>
+							<a class="img_wrap" href="drama.html">
+								<img src="images/img_schedule_table_06.jpg" alt="갯마을 차차차 포스터" />
+								<span class="btn_play"><span class="blind">보러가기</span></span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="rel_wrap">
+							<div class="info_wrap">
+								<p class="time"><span class="hour">10</span>:<span class="min">40</span></p><!--
+							  --><span class="title">이 구역의 미친X 3화</span><!--
+							  --><p class="pro_infos">
+									<span class="pro_info _15"><span>15세이상</span></span>
+									<span class="pro_info _air"><span>본방송</span></span>
+									<span class="pro_info _exp"><span>화면해설방송</span></span>
+									<span class="pro_info _sub"><span>자막방송</span></span>
+								</p>
+							</div>
+							<a class="img_wrap" href="drama.html">
+								<img src="images/img_schedule_table_07.jpg" alt="이 구역의 미친X 포스터" />
+								<span class="btn_play"><span class="blind">보러가기</span></span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="rel_wrap">
+							<div class="info_wrap">
+								<p class="time"><span class="hour">12</span>:<span class="min">10</span></p><!--
+							  --><span class="title">식샤를 합시다2 15화</span><!--
+							  --><p class="pro_infos">
+									<span class="pro_info _7"><span>7세이상</span></span>
+									<span class="pro_info _air"><span>본방송</span></span>
+									<span class="pro_info _uhd"><span>UHD방송</span></span>
+									<span class="pro_info _exp"><span>화면해설방송</span></span>
+									<span class="pro_info _sign"><span>수화방송</span></span>
+								</p>
+							</div>
+							<a class="img_wrap" href="drama.html">
+								<img src="images/img_schedule_table_08.jpg" alt="식샤를 합시다 시즌2 포스터" />
+								<span class="btn_play"><span class="blind">보러가기</span></span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="rel_wrap">
+							<div class="info_wrap">
+								<p class="time"><span class="hour">14</span>:<span class="min">00</span></p><!--
+							  --><span class="title">사랑의 온도 9화</span><!--
+							  --><p class="pro_infos">
+									<span class="pro_info _12"><span>12세이상</span></span>
+									<span class="pro_info _air"><span>본방송</span></span>
+									<span class="pro_info _uhd"><span>UHD방송</span></span>
+									<span class="pro_info _exp"><span>화면해설방송</span></span>
+								</p>
+							</div>
+							<a class="img_wrap" href="drama.html">
+								<img src="images/img_schedule_table_09.jpg" alt="사랑의 온도 포스터" />
+								<span class="btn_play"><span class="blind">보러가기</span></span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="rel_wrap">
+							<div class="info_wrap">
+								<p class="time"><span class="hour">15</span>:<span class="min">50</span></p><!--
+							  --><span class="title">연모 10화</span><!--
+							  --><p class="pro_infos">
+									<span class="pro_info _15"><span>15세이상</span></span>
+									<span class="pro_info _rep"><span>재방송</span></span>
+									<span class="pro_info _uhd"><span>UHD방송</span></span>
+									<span class="pro_info _sub"><span>자막방송</span></span>
+									<span class="pro_info _exp"><span>화면해설방송</span></span>
+								</p>
+							</div>
+							<a class="img_wrap" href="drama.html">
+								<img src="images/img_schedule_table_10.jpg" alt="연모 포스터" />
+								<span class="btn_play"><span class="blind">보러가기</span></span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="rel_wrap">
+							<div class="info_wrap">
+								<p class="time"><span class="hour">17</span>:<span class="min">20</span></p><!--
+							  --><span class="title">도깨비 6화</span><!--
+							  --><p class="pro_infos">
+									<span class="pro_info _15"><span>15세이상</span></span>
+									<span class="pro_info _rep"><span>재방송</span></span>
+									<span class="pro_info _uhd"><span>UHD방송</span></span>
+									<span class="pro_info _sub"><span>자막방송</span></span>
+									<span class="pro_info _exp"><span>화면해설방송</span></span>
+								</p>
+							</div>
+							<a class="img_wrap" href="drama.html">
+								<img src="images/img_schedule_table_11.jpg" alt="도깨비 포스터" />
+								<span class="btn_play"><span class="blind">보러가기</span></span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="rel_wrap">
+							<div class="info_wrap">
+								<p class="time"><span class="hour">18</span>:<span class="min">40</span></p><!--
+							  --><span class="title">스위트홈 1화</span><!--
+							  --><p class="pro_infos">
+									<span class="pro_info _19"><span>19세이상</span></span>
+									<span class="pro_info _air"><span>본방송</span></span>
+									<span class="pro_info _uhd"><span>UHD방송</span></span>
+									<span class="pro_info _sub"><span>자막방송</span></span>
+									<span class="pro_info _exp"><span>화면해설방송</span></span>
+								</p>
+							</div>
+							<a class="img_wrap" href="drama.html">
+								<img src="images/img_schedule_table_12.jpg" alt="스위트홈 포스터" />
+								<span class="btn_play"><span class="blind">보러가기</span></span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="rel_wrap">
+							<div class="info_wrap">
+								<p class="time"><span class="hour">20</span>:<span class="min">00</span></p><!--
+							  --><span class="title">루머의 루머의 루머 2화</span><!--
+							  --><p class="pro_infos">
+									<span class="pro_info _19"><span>19세이상</span></span>
+									<span class="pro_info _air"><span>본방송</span></span>
+									<span class="pro_info _sub"><span>자막방송</span></span>
+									<span class="pro_info _exp"><span>화면해설방송</span></span>
+								</p>
+							</div>
+							<a class="img_wrap" href="drama.html">
+								<img src="images/img_schedule_table_13.jpg" alt="루머의 루머의 루머 포스터" />
+								<span class="btn_play"><span class="blind">보러가기</span></span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="rel_wrap">
+							<div class="info_wrap">
+								<p class="time"><span class="hour">21</span>:<span class="min">00</span></p><!--
+							  --><span class="title">미스터 션샤인 11화</span><!--
+							  --><p class="pro_infos">
+									<span class="pro_info _15"><span>15세이상</span></span>
+									<span class="pro_info _air"><span>본방송</span></span>
+									<span class="pro_info _sub"><span>자막방송</span></span>
+									<span class="pro_info _exp"><span>화면해설방송</span></span>
+								</p>
+							</div>
+							<a class="img_wrap" href="drama.html">
+								<img src="images/img_schedule_table_14.jpg" alt="미스터 션샤인 포스터" />
+								<span class="btn_play"><span class="blind">보러가기</span></span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="rel_wrap">
+							<div class="info_wrap">
+								<p class="time"><span class="hour">22</span>:<span class="min">00</span></p><!--
+							  --><span class="title">빌어먹을 세상따위 6화</span><!--
+							  --><p class="pro_infos">
+									<span class="pro_info _19"><span>19세이상</span></span>
+									<span class="pro_info _air"><span>본방송</span></span>
+									<span class="pro_info _sub"><span>자막방송</span></span>
+									<span class="pro_info _uhd"><span>UHD방송</span></span>
+								</p>
+							</div>
+							<a class="img_wrap" href="drama.html">
+								<img src="images/img_schedule_table_15.jpg" alt="빌어먹을 세상따위 포스터" />
+								<span class="btn_play"><span class="blind">보러가기</span></span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="rel_wrap">
+							<div class="info_wrap">
+								<p class="time"><span class="hour">23</span>:<span class="min">30</span></p><!--
+							  --><span class="title">엠브렐라 아카데미 2화</span><!--
+							  --><p class="pro_infos">
+									<span class="pro_info _19"><span>19세이상</span></span>
+									<span class="pro_info _air"><span>본방송</span></span>
+									<span class="pro_info _sub"><span>자막방송</span></span>
+									<span class="pro_info _uhd"><span>UHD방송</span></span>
+								</p>
+							</div>
+							<a class="img_wrap" href="drama.html">
+								<img src="images/img_schedule_table_16.jpg" alt="엠브렐라 아카데미 포스터" />
+								<span class="btn_play"><span class="blind">보러가기</span></span>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="inner_wrap info_bottom">
+				<p>위 편성표는 방송사 사정에 따라 변경될 수 있습니다. 변경된 편성시간은 편성 변경안내를 통해 확인하실 수 있습니다.</p>
+				<p>
+					<span class="pro_info _all"><span>전체시청</span></span><!--
+					--><span class="pro_info _7"><span>7세이상</span></span><!--
+					--><span class="pro_info _12"><span>12세이상</span></span><!--
+					--><span class="pro_info _15"><span>15세이상</span></span><!--
+					--><span class="pro_info _19"><span>19세이상</span></span>
+				</p>
+				<p >
+					<span class="pro_info _air"><span>본방송</span></span><!--
+					--><span class="pro_info _rep"><span>재방송</span></span><!--
+					--><span class="pro_info _live"><span>생방송</span></span><!--
+					--><span class="pro_info _uhd"><span>UHD방송</span></span><!--
+					--><span class="pro_info _sub"><span>자막방송</span></span><!--
+					--><span class="pro_info _exp"><span>화면해설방송</span></span><!--
+					--><span class="pro_info _sign"><span>수화방송</span></span>
+				</p>
+			</div>
+		</section>
+<!--schedule end-->
+
+
+
+<!--footer start-->
+	<footer>
+		<div class="inner_wrap">
+			<div class="footer_menu">
+				<ul>
+					<li><a href="terms.html"><strong>이용약관</strong></a></li>
+					<li><a href="policy.html"><strong>개인정보 처리방침</strong></a></li>
+					<li><a href="protection.html">청소년보호정책</a></li>
+					<li><a href="legal_notice.html">법적고지</a></li>
+					<li><a href="rejection.html">이메일무단수집거부</a></li>
+					<li><a href="help.html">고객센터</a></li>
+				</ul>
+			</div>
+			<div class="footer_info">
+				<p>대표이사: 신희애</p><!--
+				--><p>사업자등록번호: 000-00-0000000</p><!--
+				--><p>사업장: 경기도 용인시 기흥구 동백8로 90</p><!--
+				--><p>이메일주소: <a href="mailto:dutlsdkfm@gmail.com">customercare@daplus.com</a></p><!--
+				--><p>고객센터:<a href="tel:00000000000">+82 0000-0000</a></p>
+			</div>
+			<p class="copy"><strong>copyrightⓒDa+s Corporation All Rights Reserved.</strong></p>
+			<div class="logo_wrap">
+					<img src="images/img_logo_common_D.png" alt="da+s logo">
+			</div>
+		</div>
+	</footer>
+<!--footer end-->
+
+</body>
+
+</html>
