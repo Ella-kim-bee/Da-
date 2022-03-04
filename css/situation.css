@@ -86,7 +86,7 @@
 
 	
 	/*++++section.situ_videos bg++++*/
-	section.situ_videos { position: relative; padding: 30px 0 65px 0; }
+	section.situ_videos {  overflow: hidden; position: relative; padding: 30px 0 65px 0; }
 	section.situ_videos[class~="bg"]{ background: #bcd2e0; }
 	
 	section.situ_videos h2 { font-family: "NotoSansKR-regular"; margin-bottom: 10px; font-size: 1.25em; text-align: left; }
@@ -197,7 +197,7 @@
 	
 	
 	/*++++section.situ_videos bg++++*/
-	section.situ_videos { position: relative; width: 100%; padding: 50px 0 90px; }
+	section.situ_videos { overflow: hidden; position: relative; width: 100%; padding: 50px 0 90px; }
 	section.situ_videos[class~="bg"]{ width: 100%; background: #bcd2e0; }
 
 	section.situ_videos div.inner_wrap_02 { margin: 0 20px; text-align: center; }
