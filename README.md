@@ -5,7 +5,7 @@
 
 1. navigation에 `*`표시가 된 메뉴는 제작이 완료된 서브페이지 입니다.
 
-**index
+`**index`
 2. index - Dramas는 각 카테고리별 최신 작품들을 보여줍니다.
 마우스 hover시 메인컬러로 테두리가 생성됩니다. 별표는 path로 제작되었습니다.
 auto slide기능이 있으며, 좌우 prev, next가 가능합니다.
