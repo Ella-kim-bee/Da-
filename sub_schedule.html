@@ -12,48 +12,8 @@
 		<script src="js/html5shiv.js"></script>
 		<![endif] -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-	<script src="js/common.js" type="text/script"></script>
-	<script type="text/javascript">
-		window.onload = function(){
-
-		(function cur_program(){
-			let arr_prog_time = [];
-			let $lists = document.querySelectorAll("#time_table ul li");
-			let $prog_each_time = document.querySelectorAll("#time_table ul li p.time");
-			let cur_num;
-
-			for(var i = 0; i < $prog_each_time.length - 1; i++){
-				var value = $prog_each_time[i].innerText;
-				value = value.replace(":", "");
-				arr_prog_time[i] = value;
-			}
-
-			let $date = new Date();
-			let _hours = $date.getHours() < 10 ? "0"+ $date.getHours() : $date.getHours();
-			let _minutes = $date.getMinutes() < 10 ? "0"+ $date.getMinutes() : $date.getMinutes();
-			let cur_time = String(_hours) + String(_minutes);
-
-			for(let i = 0; i < $prog_each_time.length - 1; i++){
-				if(cur_time >= arr_prog_time[i] && cur_time < arr_prog_time[i + 1]){
-					cur_num = i;
-					for(let k = 0; k < $lists.length - 1; k++){
-						$lists[k].classList.remove("active");
-					}
-					$lists[cur_num].classList.add("active");
-					break;
-				}
-			}
-
-		})();
-
-	}
-
-
-	
-	</script>
-
-
-
+	<script src="js/common.js"></script>
+	<script src="js/schedule.js"></script>
 </head>
 	
 <body>
