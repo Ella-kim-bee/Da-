@@ -169,8 +169,8 @@ a.btn_more { padding: 0.5rem 2.5rem; border: 1px solid black; font-size: 1em; }
 	/*button_dir_btns (prev, next)*/
 	.dir_btns { position: absolute; display: inline-block; height: 30px; vertical-align: middle; margin-top:10px; }
 	.dir_btns span { display: inline-block; } 
-	.dir_btns[class ~= "prev"] { left: 0.438em; }
-	.dir_btns[class ~= "next"] { right: 0.438em; }
+	.dir_btns[class ~= "prev"] { left: 1.438em; }
+	.dir_btns[class ~= "next"] { right: 1.438em; }
 	.dir_btns[class ~= "prev"]::before { content:""; display: inline-block; width: 30px; height: 30px; background: url("../images/btn_common_prev_T.png") no-repeat; background-size: cover; margin-right: 10px; vertical-align: middle;}
 	.dir_btns[class ~= "next"]::after { content:""; display: inline-block; width: 30px; height: 30px; background: url("../images/btn_common_next_T.png") no-repeat; background-size: cover;  margin-left: 10px; vertical-align: middle; }
 	
